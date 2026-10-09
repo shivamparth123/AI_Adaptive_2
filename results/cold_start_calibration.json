@@ -1,0 +1,46 @@
+{
+  "llama3.2:3b": {
+    "overhead_sec": 4.8,
+    "mean_overhead_sec": 4.8,
+    "std_overhead_sec": 1.18,
+    "median_overhead_sec": 4.36,
+    "min_overhead_sec": 4.24,
+    "max_overhead_sec": 8.09,
+    "mean_cold_sec": 5.26,
+    "mean_warm_sec": 0.46,
+    "sample_count": 10
+  },
+  "phi4-mini:latest": {
+    "overhead_sec": 4.76,
+    "mean_overhead_sec": 4.76,
+    "std_overhead_sec": 0.79,
+    "median_overhead_sec": 4.44,
+    "min_overhead_sec": 3.9,
+    "max_overhead_sec": 5.9,
+    "mean_cold_sec": 5.53,
+    "mean_warm_sec": 0.78,
+    "sample_count": 10
+  },
+  "qwen3:4b": {
+    "overhead_sec": 4.41,
+    "mean_overhead_sec": 4.41,
+    "std_overhead_sec": 0.55,
+    "median_overhead_sec": 4.35,
+    "min_overhead_sec": 3.65,
+    "max_overhead_sec": 5.7,
+    "mean_cold_sec": 5.79,
+    "mean_warm_sec": 1.38,
+    "sample_count": 10
+  },
+  "gemma3:4b": {
+    "overhead_sec": 7.4,
+    "mean_overhead_sec": 7.4,
+    "std_overhead_sec": 0.43,
+    "median_overhead_sec": 7.39,
+    "min_overhead_sec": 6.8,
+    "max_overhead_sec": 8.16,
+    "mean_cold_sec": 7.75,
+    "mean_warm_sec": 0.35,
+    "sample_count": 10
+  }
+}

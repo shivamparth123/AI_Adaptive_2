@@ -1,0 +1,32 @@
+timestamp,query,category,ram_available_gb,effective_ram_gb,selected_model,actual_response_time_sec
+2026-09-29T01:08:14,who is the prime minister of india ?,other,3.5,3.5,llama3.2:3b,6.58
+2026-09-29T02:12:06,give me c++ program for to find total palindromic substrings,programming,3.91,3.91,llama3.2:3b,34.41
+2026-09-29T13:42:45,give me c++ program for to find total palindromic substrings,programming,1.14,4.45,llama3.2:3b,55.21
+2026-09-29T13:50:58,give me c++ program for to find total palindromic substrings,programming,2.67,5.98,llama3.2:3b,55.68
+2026-09-30T13:18:22,give me c++ program for to find total palindromic substrings,balanced,programming,3.7,3.7,llama3.2:3b,33.09
+2026-09-30T13:20:44,what is eigenvalue and eigenvector.tell me its properties with orthogonal vector and matrix?,balanced,knowledge,4.71,4.71,phi4-mini:latest,61.24
+2026-10-01T02:25:28,What does this i,vision,image_understanding,2.54,2.54,gemma3:4b,62.25,True
+2026-10-01T02:27:05,mage show?  not hanuman its krishna,balanced,other,4.44,4.44,llama3.2:3b,11.81,False
+2026-10-01T02:38:20,What does this i,vision,image_understanding,3.68,3.68,gemma3:4b,59.17,True
+2026-10-01T02:38:30,mage show?,balanced,other,4.59,4.59,llama3.2:3b,8.17,False
+2026-10-01T02:43:58,Describe what's in this screenshot,vision,image_understanding,4.48,4.48,gemma3:4b,43.04,True
+2026-10-01T02:46:58,What does this image show?,vision,image_understanding,5.21,5.21,gemma3:4b,23.81,False
+2026-10-01T02:51:07,What does this image show?,vision,image_understanding,4.65,4.65,gemma3:4b,25.5,True
+2026-10-01T02:54:40,What does this image show?,vision,image_understanding,5.19,5.19,gemma3:4b,40.8,False
+2026-10-04T00:59:40,What does this image show?,vision,image_understanding,3.18,3.18,gemma3:4b,39.34,True
+2026-10-04T01:02:09,tell me to cook chiken step by step from these spices,balanced,task_planning,4.39,4.39,phi4-mini:latest,46.5,False
+2026-10-04T01:07:05,What does the text in this image say?,vision,image_understanding,3.74,3.74,qwen3-vl:4b,59.29,True
+2026-10-04T01:13:01,What does the text in this image say ?and explain things,vision,image_understanding,4.81,4.81,qwen3-vl:4b,91.09,False
+2026-10-04T01:19:56,Describe what you see in this image,vision_comparison,image_understanding,4.96,4.96,gemma3:4b,52.91,False
+2026-10-04T01:19:56,Describe what you see in this image,vision_comparison,image_understanding,5.21,5.21,qwen3-vl:4b,98.16,False
+2026-10-04T01:40:01,Describe what you see in this image,vision_comparison,image_understanding,4.57,4.57,gemma3:4b,52.73,True
+2026-10-04T01:40:01,Describe what you see in this image,vision_comparison,image_understanding,4.54,4.54,qwen3-vl:4b,104.06,True
+2026-10-04T01:44:22,Describe what you see in this image,vision_comparison,image_understanding,4.59,4.59,gemma3:4b,35.66,True
+2026-10-04T01:44:22,Describe what you see in this image,vision_comparison,image_understanding,4.99,4.99,qwen3-vl:4b,68.5,False
+2026-10-04T01:48:55,Describe what you see in this image,vision_comparison,image_understanding,4.92,4.92,gemma3:4b,51.68,False
+2026-10-04T01:48:55,Describe what you see in this image,vision_comparison,image_understanding,5.07,5.07,qwen3-vl:4b,96.95,False
+2026-10-04T01:55:52,Describe what you see in this image,vision,image_understanding,4.86,4.86,gemma3:4b,56.33,False
+2026-10-04T01:59:33,Describe what you see in this image,vision_comparison,image_understanding,5.2,5.2,gemma3:4b,50.74,False
+2026-10-04T01:59:33,Describe what you see in this image,vision_comparison,image_understanding,5.22,5.22,qwen3-vl:4b,140.77,False
+2026-10-04T06:22:03,Describe what you see in this image,vision_comparison,image_understanding,3.0,3.0,gemma3:4b,73.9,True
+2026-10-04T06:22:03,Describe what you see in this image,vision_comparison,image_understanding,4.11,4.11,qwen3-vl:4b,269.82,True

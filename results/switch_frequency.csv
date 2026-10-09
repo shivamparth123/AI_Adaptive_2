@@ -1,0 +1,28 @@
+scenario,policy,total_prompts,switches,switch_rate_pct
+ample (6.0 GB free),adaptive router (latency>quality),105,26,25.0
+ample (6.0 GB free),adaptive router (latency>quality) (true category),105,4,3.8
+ample (6.0 GB free),balanced (quality>latency),105,26,25.0
+ample (6.0 GB free),fixed: gemma3:4b,105,0,0.0
+ample (6.0 GB free),fixed: llama3.2:3b,105,0,0.0
+ample (6.0 GB free),fixed: phi4-mini:latest,105,0,0.0
+ample (6.0 GB free),fixed: qwen3:4b,105,0,0.0
+ample (6.0 GB free),quality-only,105,41,39.4
+ample (6.0 GB free),speed-only,105,28,26.9
+moderate (4.5 GB free),adaptive router (latency>quality),105,26,25.0
+moderate (4.5 GB free),adaptive router (latency>quality) (true category),105,4,3.8
+moderate (4.5 GB free),balanced (quality>latency),105,26,25.0
+moderate (4.5 GB free),fixed: gemma3:4b,105,0,0.0
+moderate (4.5 GB free),fixed: llama3.2:3b,105,0,0.0
+moderate (4.5 GB free),fixed: phi4-mini:latest,105,0,0.0
+moderate (4.5 GB free),fixed: qwen3:4b,105,0,0.0
+moderate (4.5 GB free),quality-only,105,25,24.0
+moderate (4.5 GB free),speed-only,105,28,26.9
+tight (3.7 GB free),adaptive router (latency>quality),105,26,25.0
+tight (3.7 GB free),adaptive router (latency>quality) (true category),105,4,3.8
+tight (3.7 GB free),balanced (quality>latency),105,26,25.0
+tight (3.7 GB free),fixed: gemma3:4b,105,0,0.0
+tight (3.7 GB free),fixed: llama3.2:3b,105,0,0.0
+tight (3.7 GB free),fixed: phi4-mini:latest,105,0,0.0
+tight (3.7 GB free),fixed: qwen3:4b,105,0,0.0
+tight (3.7 GB free),quality-only,105,25,24.0
+tight (3.7 GB free),speed-only,105,28,26.9

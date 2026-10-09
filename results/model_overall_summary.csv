@@ -1,0 +1,6 @@
+model,avg_response_time_sec,avg_tokens_per_sec,avg_ram_delta_mb,avg_cpu_percent,avg_tokens_generated,num_prompts
+deepseek-r1:8b,101.07,7.07,-5.87,61.77,701.37,108
+gemma3:4b,39.43,12.99,0.73,61.77,482.75,108
+llama3.2:3b,16.61,17.5,35.47,64.76,264.23,108
+phi4-mini:latest,14.05,15.55,-12.62,58.42,196.85,108
+qwen3:4b,61.15,13.41,-0.05,60.3,810.1,108
