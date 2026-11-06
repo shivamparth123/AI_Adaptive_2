@@ -1,0 +1,37 @@
+id,prompt,true_category,rule_prediction,rule_correct,logreg_prediction,logreg_correct,svm_prediction,svm_correct
+t_know_01,how do solid state drives store data without moving parts,knowledge,other,False,language,False,language,False
+t_know_02,Why is the sky blue during the day but red at sunset?,knowledge,knowledge,True,reasoning,False,reasoning,False
+t_know_03,Can you explain what a firewall does?,knowledge,knowledge,True,knowledge,True,knowledge,True
+t_know_04,what's the difference between a virus and a bacterium,knowledge,knowledge,True,knowledge,True,knowledge,True
+t_reas_01,"A car covers 150 km in 2.5 hours. What's its average speed, and how long would 400 km take?",reasoning,reasoning,True,reasoning,True,reasoning,True
+t_reas_02,"If a rectangle's perimeter is 36 and its length is twice its width, find its dimensions.",reasoning,reasoning,True,reasoning,True,reasoning,True
+t_reas_03,"Is it logically valid to say: no birds are mammals, bats are mammals, therefore bats are not birds?",reasoning,reasoning,True,other,False,reasoning,True
+t_reas_04,"Which grows faster, n log n or n squared, and why?",reasoning,reasoning,True,data,False,data,False
+t_prog_01,"my python loop keeps printing the same value forever, here's the code: while x > 0: print(x)",programming,programming,True,programming,True,programming,True
+t_prog_02,Write a JavaScript function that removes duplicates from an array,programming,programming,True,programming,True,programming,True
+t_prog_03,how do I reverse a string in C,programming,programming,True,language,False,language,False
+t_prog_04,Write a bash one-liner to count lines in all .txt files,programming,programming,True,programming,True,programming,True
+t_lang_01,How would I say 'where is the library' in German?,language,language,True,language,True,language,True
+t_lang_02,"Make this sound more professional: 'we messed up the order, sorry'",language,language,True,language,True,language,True
+t_lang_03,"Translate 'good morning, how did you sleep?' into Spanish",language,language,True,conversation,False,conversation,False
+t_lang_04,Write a short email declining a meeting invitation politely,language,other,False,content,False,language,True
+t_cont_01,Give me a one-paragraph summary of the causes of World War 1,content,content,True,content,True,content,True
+t_cont_02,Write a short poem about a rainy Monday morning,content,other,False,content,True,content,True
+t_cont_03,Come up with 5 names for a coffee shop that also sells books,content,content,True,reasoning,False,reasoning,False
+t_cont_04,Write a funny two-line caption for a photo of a cat on a laptop,content,other,False,content,True,content,True
+t_data_01,From this sentence pull out the date and the person's name: 'Priya booked the hall on 14 August.',data,data,True,data,True,data,True
+t_data_02,"Is this message spam? 'You've been selected for a free cruise, reply YES now'",data,other,False,data,True,data,True
+t_data_03,Label the sentiment of this review: 'Battery life is awful but the screen is gorgeous.',data,data,True,data,True,data,True
+t_data_04,What does a high standard deviation tell you about a dataset?,data,data,True,knowledge,False,knowledge,False
+t_task_01,Help me plan a 5-day revision schedule for my DBMS exam,task_planning,task_planning,True,task_planning,True,task_planning,True
+t_task_02,What are the steps to publish a Python package to PyPI?,task_planning,programming,False,other,False,other,False
+t_task_03,Create a checklist for moving into a new apartment,task_planning,task_planning,True,task_planning,True,task_planning,True
+t_task_04,Walk me through setting up SSH keys for GitHub,task_planning,task_planning,True,task_planning,True,task_planning,True
+t_conv_01,hey! what's up?,conversation,conversation,True,knowledge,False,language,False
+t_conv_02,"I'm bored, any suggestions for something to do tonight?",conversation,conversation,True,conversation,True,conversation,True
+t_conv_03,Do you ever get tired of answering questions?,conversation,conversation,True,conversation,True,conversation,True
+t_conv_04,"I just finished my exams, feeling great!",conversation,conversation,True,conversation,True,conversation,True
+t_other_01,What is the speed of light in km/s?,other,knowledge,False,other,True,other,True
+t_other_02,Convert 72 inches to centimeters,other,other,True,other,True,other,True
+t_other_03,Who wrote the play Hamlet?,other,other,True,other,True,other,True
+t_other_04,What is the largest ocean on Earth?,other,knowledge,False,other,True,other,True

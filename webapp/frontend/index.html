@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Adaptive Local AI</title>
+<link rel="stylesheet" href="style.css">
+<!-- Local app, not a hosted page - no CSP restrictions on external scripts here -->
+<script src="https://cdn.jsdelivr.net/npm/marked@12.0.0/marked.min.js"></script>
+<!-- KaTeX: renders LaTeX math (model responses frequently include \[ ... \] and
+     \( ... \) notation for equations, e.g. Fourier transforms, SVD, eigenvalues) -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+</head>
+<body>
+<div class="shell">
+
+  <!-- ===== SIDEBAR ===== -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-head">
+      <div class="brand"><span class="brand-mark">&#9670;</span> Adaptive Local AI</div>
+      <button class="icon-btn sidebar-hide" title="Hide sidebar">&laquo;</button>
+    </div>
+
+    <button id="newChatBtn" class="new-chat-btn">&#65291; New chat</button>
+
+    <nav class="nav">
+      <button class="nav-item active" data-tab="chatTab">&#128172; Chat</button>
+      <button class="nav-item" data-tab="imageTab">&#128444; Image</button>
+      <button class="nav-item" data-tab="historyTab">&#128340; History</button>
+    </nav>
+
+    <div class="recents-head">Recents</div>
+    <div class="recents" id="recentsList"></div>
+
+  </aside>
+
+  <main class="main">
+
+    <!-- ===== CHAT TAB ===== -->
+    <section id="chatTab" class="tab-panel active">
+      <div class="topbar">
+        <button class="icon-btn sidebar-show" title="Show sidebar">&#9776;</button>
+        <div class="topbar-title" id="chatTitle">New chat</div>
+        <div class="sys-chips"></div>
+        <button id="clearChatBtn" class="ghost-btn" title="Delete this chat (you can undo for 10 seconds)">Delete chat</button>
+      </div>
+
+      <div class="chat-wrap">
+        <div class="chat-scroll" id="chatScroll">
+          <div class="chat-thread" id="chatThread" data-placeholder="What can I help with?"></div>
+        </div>
+        <button class="scroll-down" id="chatScrollDown" title="Jump to latest" hidden>&darr;</button>
+      </div>
+
+      <div class="composer-wrap">
+        <div class="composer">
+          <textarea id="queryInput" rows="1" placeholder="Message Adaptive Local AI  (Enter to send, Shift+Enter for newline)"></textarea>
+          <div class="composer-bar">
+            <div class="composer-left">
+            <label class="pill" title="Which model answers: the router decides (Auto) or you pick one">Model
+              <select id="modelSelect">
+                <option value="auto" selected>Auto (router)</option>
+              </select>
+            </label>
+            <label class="pill" id="modeLabel" title="How the router weighs quality vs speed (not used when you pick a model)">Mode
+              <select id="modeSelect">
+                <option value="balanced" selected>balanced</option>
+                <option value="fast">fast</option>
+                <option value="quality">quality</option>
+                <option value="explore" title="10% of queries deliberately try a non-top model">explore (opt-in)</option>
+              </select>
+            </label>
+            </div>
+            <button id="sendBtn" class="send-btn" title="Send">&uarr;</button>
+          </div>
+        </div>
+        <p class="composer-note" id="chatNote">Runs locally on CPU - answers can take 10-300+ seconds. Your conversations are saved in this browser.</p>
+      </div>
+    </section>
+
+    <!-- ===== IMAGE TAB ===== -->
+    <section id="imageTab" class="tab-panel">
+      <div class="topbar">
+        <button class="icon-btn sidebar-show" title="Show sidebar">&#9776;</button>
+        <div class="topbar-title" id="imageTitle">New image chat</div>
+        <div class="sys-chips"></div>
+        <button id="imageClearAllBtn" class="ghost-btn" title="Delete this image chat (you can undo for 10 seconds)">Delete chat</button>
+      </div>
+
+      <div class="chat-wrap">
+        <div class="chat-scroll" id="imageScroll">
+          <div class="chat-thread" id="imageThread" data-placeholder="Attach an image with the + button (or paste / drag &amp; drop), then ask about it. It stays attached for follow-up questions."></div>
+        </div>
+        <button class="scroll-down" id="imageScrollDown" title="Jump to latest" hidden>&darr;</button>
+      </div>
+
+      <div class="composer-wrap">
+        <div class="composer">
+          <div class="image-chip" id="imageChip" hidden>
+            <img id="imageChipThumb" alt="">
+            <span class="chip-name" id="imageChipName"></span>
+            <button id="clearImageBtn" class="chip-clear" title="Detach this image (the chat history is kept)">Clear image</button>
+          </div>
+          <textarea id="imageQuestionInput" rows="1"></textarea>
+          <div class="composer-bar">
+            <div class="composer-left">
+              <input type="file" id="imageFileInput" accept="image/*" hidden>
+              <button id="attachBtn" class="icon-btn round" title="Attach an image">&#65291;</button>
+              <button id="imageCompareBtn" class="pill-btn" title="Run both vision models on this image and question">Compare models</button>
+            </div>
+            <button id="imageSendBtn" class="send-btn" title="Ask">&uarr;</button>
+          </div>
+        </div>
+        <p class="composer-note">Gemma 3 4B (general images) or Qwen3-VL 4B (OCR / documents), chosen automatically. Not streamed.</p>
+      </div>
+    </section>
+
+    <!-- ===== HISTORY TAB ===== -->
+    <section id="historyTab" class="tab-panel">
+      <div class="topbar">
+        <button class="icon-btn sidebar-show" title="Show sidebar">&#9776;</button>
+        <div class="topbar-title">Usage history</div>
+        <div class="sys-chips"></div>
+        <span id="historySummary" class="topbar-note"></span>
+        <button id="refreshHistoryBtn" class="ghost-btn">Refresh</button>
+      </div>
+      <div class="history-table-wrap">
+        <table class="history-table" id="historyTable">
+          <thead>
+            <tr>
+              <th>Time</th><th>Source</th><th>Query</th><th>Category</th>
+              <th>Model</th><th>Switch</th><th>Time (s)</th>
+            </tr>
+          </thead>
+          <tbody id="historyTableBody"></tbody>
+        </table>
+      </div>
+      <p class="composer-note">Unified log across BOTH this web app and the CLI (maincode.py) - both write to logs/interactive_session_log.csv.</p>
+    </section>
+
+  </main>
+</div>
+
+<div class="toast" id="toast" hidden>
+  <span id="toastText"></span>
+  <button id="toastUndo" class="toast-btn">Undo</button>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

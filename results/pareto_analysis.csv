@@ -1,0 +1,37 @@
+category,model,quality,latency_sec,is_dominated,dominated_by
+content,llama3.2:3b,9.55,11.71,False,
+content,phi4-mini:latest,9.35,7.43,False,
+content,qwen3:4b,9.23,49.24,True,"llama3.2:3b, phi4-mini:latest, gemma3:4b"
+content,gemma3:4b,9.6,23.2,False,
+conversation,llama3.2:3b,9.65,21.14,False,
+conversation,phi4-mini:latest,9.6,22.78,True,llama3.2:3b
+conversation,qwen3:4b,8.73,67.1,True,"llama3.2:3b, phi4-mini:latest, gemma3:4b"
+conversation,gemma3:4b,9.45,52.41,True,"llama3.2:3b, phi4-mini:latest"
+data,llama3.2:3b,9.78,9.61,True,phi4-mini:latest
+data,phi4-mini:latest,9.85,5.61,False,
+data,qwen3:4b,9.15,59.31,True,"llama3.2:3b, phi4-mini:latest, gemma3:4b"
+data,gemma3:4b,9.78,19.81,True,"llama3.2:3b, phi4-mini:latest"
+knowledge,llama3.2:3b,9.5,31.72,True,phi4-mini:latest
+knowledge,phi4-mini:latest,9.57,19.44,False,
+knowledge,qwen3:4b,8.95,66.47,True,"llama3.2:3b, phi4-mini:latest, gemma3:4b"
+knowledge,gemma3:4b,9.58,59.74,False,
+language,llama3.2:3b,9.7,6.91,True,phi4-mini:latest
+language,phi4-mini:latest,9.76,4.36,False,
+language,qwen3:4b,8.65,63.53,True,"llama3.2:3b, phi4-mini:latest, gemma3:4b"
+language,gemma3:4b,9.78,23.56,False,
+other,llama3.2:3b,9.97,3.36,False,
+other,phi4-mini:latest,9.83,5.13,True,llama3.2:3b
+other,qwen3:4b,9.27,53.08,True,"llama3.2:3b, phi4-mini:latest, gemma3:4b"
+other,gemma3:4b,9.88,5.83,True,llama3.2:3b
+programming,llama3.2:3b,9.48,18.36,False,
+programming,phi4-mini:latest,9.62,24.05,False,
+programming,qwen3:4b,8.05,62.79,True,"llama3.2:3b, phi4-mini:latest"
+programming,gemma3:4b,9.68,67.6,False,
+reasoning,llama3.2:3b,9.63,17.29,False,
+reasoning,phi4-mini:latest,9.77,17.84,False,
+reasoning,qwen3:4b,9.45,63.58,True,"llama3.2:3b, phi4-mini:latest, gemma3:4b"
+reasoning,gemma3:4b,9.78,44.4,False,
+task_planning,llama3.2:3b,9.17,29.4,True,phi4-mini:latest
+task_planning,phi4-mini:latest,9.25,19.31,False,
+task_planning,qwen3:4b,9.0,64.5,True,"llama3.2:3b, phi4-mini:latest, gemma3:4b"
+task_planning,gemma3:4b,9.42,54.0,False,

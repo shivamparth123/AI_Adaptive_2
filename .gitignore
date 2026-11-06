@@ -1,0 +1,34 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+env/
+*.egg-info/
+
+# ---- Editors / OS ----
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---- Private or generated data (never upload) ----
+# uploaded images (your screenshots / photos)
+webapp/backend/uploads/*
+!webapp/backend/uploads/.gitkeep
+# the activity log holds the text of your questions
+logs/*
+!logs/.gitkeep
+results/interactive_session_log.csv
+*_BACKUP_*.csv
+
+# ---- Local-only folders and notes ----
+archive/
+PROJECT_STATE.md
+
+# ---- Secrets / misc ----
+.env
+*.env
+*.log
+*.tmp

@@ -1,0 +1,28 @@
+scenario,policy,fits,mean_latency_sec,median_latency_sec,mean_quality
+tight (3.7 GB free),adaptive router (latency>quality),True,13.71,10.49,9.61
+tight (3.7 GB free),adaptive router (latency>quality) (true category),True,13.04,10.25,9.61
+tight (3.7 GB free),balanced (quality>latency),True,13.71,10.49,9.61
+tight (3.7 GB free),fixed: gemma3:4b,False,39.09,31.07,9.66
+tight (3.7 GB free),fixed: llama3.2:3b,True,16.7,12.11,9.6
+tight (3.7 GB free),fixed: phi4-mini:latest,True,14.3,10.72,9.62
+tight (3.7 GB free),fixed: qwen3:4b,True,60.97,66.64,8.94
+tight (3.7 GB free),quality-only,True,14.39,11.05,9.62
+tight (3.7 GB free),speed-only,True,13.98,10.59,9.62
+moderate (4.5 GB free),adaptive router (latency>quality),True,13.71,10.49,9.61
+moderate (4.5 GB free),adaptive router (latency>quality) (true category),True,13.04,10.25,9.61
+moderate (4.5 GB free),balanced (quality>latency),True,13.71,10.49,9.61
+moderate (4.5 GB free),fixed: gemma3:4b,False,39.09,31.07,9.66
+moderate (4.5 GB free),fixed: llama3.2:3b,True,16.7,12.11,9.6
+moderate (4.5 GB free),fixed: phi4-mini:latest,True,14.3,10.72,9.62
+moderate (4.5 GB free),fixed: qwen3:4b,True,60.97,66.64,8.94
+moderate (4.5 GB free),quality-only,True,14.39,11.05,9.62
+moderate (4.5 GB free),speed-only,True,13.98,10.59,9.62
+ample (6.0 GB free),adaptive router (latency>quality),True,13.71,10.49,9.61
+ample (6.0 GB free),adaptive router (latency>quality) (true category),True,13.04,10.25,9.61
+ample (6.0 GB free),balanced (quality>latency),True,13.71,10.49,9.61
+ample (6.0 GB free),fixed: gemma3:4b,True,39.09,31.07,9.66
+ample (6.0 GB free),fixed: llama3.2:3b,True,16.7,12.11,9.6
+ample (6.0 GB free),fixed: phi4-mini:latest,True,14.3,10.72,9.62
+ample (6.0 GB free),fixed: qwen3:4b,True,60.97,66.64,8.94
+ample (6.0 GB free),quality-only,True,30.54,23.47,9.66
+ample (6.0 GB free),speed-only,True,13.98,10.59,9.62

@@ -1,0 +1,82 @@
+set,id,prompt,true,rule,svm_base,svm_aug,hybrid_base,hybrid_aug,hybrid_aug_source,max_similarity_to_training,near_duplicate
+v1,t_know_01,how do solid state drives store data without moving parts,knowledge,other,language,language,language,language,ml,0.32,False
+v1,t_know_02,Why is the sky blue during the day but red at sunset?,knowledge,knowledge,reasoning,knowledge,knowledge,knowledge,rule,0.18,False
+v1,t_know_03,Can you explain what a firewall does?,knowledge,knowledge,knowledge,knowledge,knowledge,knowledge,rule,0.35,False
+v1,t_know_04,what's the difference between a virus and a bacterium,knowledge,knowledge,knowledge,knowledge,knowledge,knowledge,rule,0.53,True
+v1,t_reas_01,"A car covers 150 km in 2.5 hours. What's its average speed, and how long would 400 km take?",reasoning,reasoning,reasoning,reasoning,reasoning,reasoning,rule,0.13,False
+v1,t_reas_02,"If a rectangle's perimeter is 36 and its length is twice its width, find its dimensions.",reasoning,reasoning,reasoning,reasoning,reasoning,reasoning,rule,0.16,False
+v1,t_reas_03,"Is it logically valid to say: no birds are mammals, bats are mammals, therefore bats are not birds?",reasoning,reasoning,reasoning,reasoning,reasoning,reasoning,rule,0.22,False
+v1,t_reas_04,"Which grows faster, n log n or n squared, and why?",reasoning,reasoning,data,data,reasoning,reasoning,rule,0.22,False
+v1,t_prog_01,"my python loop keeps printing the same value forever, here's the code: while x > 0: print(x)",programming,programming,programming,programming,programming,programming,rule,0.24,False
+v1,t_prog_02,Write a JavaScript function that removes duplicates from an array,programming,programming,programming,programming,programming,programming,rule,0.37,False
+v1,t_prog_03,how do I reverse a string in C,programming,programming,language,language,programming,programming,rule,0.32,False
+v1,t_prog_04,Write a bash one-liner to count lines in all .txt files,programming,programming,programming,programming,programming,programming,rule,0.18,False
+v1,t_lang_01,How would I say 'where is the library' in German?,language,language,language,language,language,language,rule,0.33,False
+v1,t_lang_02,"Make this sound more professional: 'we messed up the order, sorry'",language,language,language,language,language,language,rule,0.27,False
+v1,t_lang_03,"Translate 'good morning, how did you sleep?' into Spanish",language,language,conversation,language,language,language,rule,0.21,False
+v1,t_lang_04,Write a short email declining a meeting invitation politely,language,other,language,language,language,language,ml,0.34,False
+v1,t_cont_01,Give me a one-paragraph summary of the causes of World War 1,content,content,content,content,content,content,rule,0.24,False
+v1,t_cont_02,Write a short poem about a rainy Monday morning,content,other,content,content,content,content,ml,0.55,True
+v1,t_cont_03,Come up with 5 names for a coffee shop that also sells books,content,content,reasoning,content,content,content,rule,0.12,False
+v1,t_cont_04,Write a funny two-line caption for a photo of a cat on a laptop,content,other,content,content,content,content,ml,0.41,False
+v1,t_data_01,From this sentence pull out the date and the person's name: 'Priya booked the hall on 14 August.',data,data,data,data,data,data,rule,0.24,False
+v1,t_data_02,"Is this message spam? 'You've been selected for a free cruise, reply YES now'",data,other,data,data,data,data,ml,0.27,False
+v1,t_data_03,Label the sentiment of this review: 'Battery life is awful but the screen is gorgeous.',data,data,data,data,data,data,rule,0.21,False
+v1,t_data_04,What does a high standard deviation tell you about a dataset?,data,data,knowledge,data,data,data,rule,0.2,False
+v1,t_task_01,Help me plan a 5-day revision schedule for my DBMS exam,task_planning,task_planning,task_planning,task_planning,task_planning,task_planning,rule,0.48,False
+v1,t_task_02,What are the steps to publish a Python package to PyPI?,task_planning,programming,other,other,programming,programming,rule,0.19,False
+v1,t_task_03,Create a checklist for moving into a new apartment,task_planning,task_planning,task_planning,task_planning,task_planning,task_planning,rule,0.18,False
+v1,t_task_04,Walk me through setting up SSH keys for GitHub,task_planning,task_planning,task_planning,task_planning,task_planning,task_planning,rule,0.48,False
+v1,t_conv_01,hey! what's up?,conversation,conversation,language,knowledge,conversation,conversation,rule,0.15,False
+v1,t_conv_02,"I'm bored, any suggestions for something to do tonight?",conversation,conversation,conversation,conversation,conversation,conversation,rule,0.34,False
+v1,t_conv_03,Do you ever get tired of answering questions?,conversation,conversation,conversation,conversation,conversation,conversation,rule,0.29,False
+v1,t_conv_04,"I just finished my exams, feeling great!",conversation,conversation,conversation,conversation,conversation,conversation,rule,0.4,False
+v1,t_other_01,What is the speed of light in km/s?,other,knowledge,other,other,knowledge,knowledge,rule,0.41,False
+v1,t_other_02,Convert 72 inches to centimeters,other,other,other,other,other,other,ml,0.39,False
+v1,t_other_03,Who wrote the play Hamlet?,other,other,other,other,other,other,ml,0.35,False
+v1,t_other_04,What is the largest ocean on Earth?,other,knowledge,other,other,knowledge,knowledge,rule,0.38,False
+v2,v2_know_01,how does a bloom filter work,knowledge,knowledge,knowledge,knowledge,knowledge,knowledge,rule,0.27,False
+v2,v2_know_02,whats the point of virtual memory,knowledge,other,other,language,other,language,ml,0.27,False
+v2,v2_know_03,why do airplanes leave white trails in the sky,knowledge,other,other,knowledge,other,knowledge,ml,0.27,False
+v2,v2_know_04,what happens when you type a url in the browser,knowledge,other,other,other,other,other,ml,0.3,False
+v2,v2_know_05,tell me how vaccines train the immune system,knowledge,other,knowledge,knowledge,knowledge,knowledge,ml,0.64,True
+v2,v2_reas_01,if 3 pumps fill a tank in 12 hours how long will 5 pumps take,reasoning,other,reasoning,reasoning,reasoning,reasoning,ml,0.33,False
+v2,v2_reas_02,is the sum of two odd numbers always even? prove it,reasoning,reasoning,reasoning,reasoning,reasoning,reasoning,rule,0.76,True
+v2,v2_reas_03,"a train leaves at 3pm going 60 mph, another at 4pm going 80 mph, when does the second catch up",reasoning,other,reasoning,reasoning,reasoning,reasoning,ml,0.57,True
+v2,v2_reas_04,what's 15% of 840 minus 12% of 500,reasoning,other,reasoning,reasoning,reasoning,reasoning,ml,0.18,False
+v2,v2_reas_05,"which is larger, 2^100 or 100^20?",reasoning,other,reasoning,reasoning,reasoning,reasoning,ml,0.61,True
+v2,v2_prog_01,"getting 'list index out of range' in my python code, why",programming,programming,programming,programming,programming,programming,rule,0.26,False
+v2,v2_prog_02,write sql to find the second highest salary from employees,programming,programming,programming,programming,programming,programming,rule,0.74,True
+v2,v2_prog_03,how to center a div in css,programming,other,language,programming,language,programming,ml,0.26,False
+v2,v2_prog_04,difference between == and === in js,programming,knowledge,knowledge,knowledge,knowledge,knowledge,rule,0.46,False
+v2,v2_prog_05,can you write a function that checks if a string is a palindrome,programming,programming,programming,programming,programming,programming,rule,0.44,False
+v2,v2_lang_01,how do you say thank you very much in japanese,language,language,language,language,language,language,rule,1.0,True
+v2,v2_lang_02,can you proofread this: 'their going to the market tomorow',language,other,conversation,conversation,conversation,conversation,ml,0.27,False
+v2,v2_lang_03,rewrite this sentence to be less rude: 'your report is a mess',language,language,language,language,language,language,rule,0.32,False
+v2,v2_lang_04,translate 'i miss you' to french,language,language,language,language,language,language,rule,0.41,False
+v2,v2_lang_05,what does 'carpe diem' mean,language,other,language,knowledge,language,knowledge,ml,0.43,False
+v2,v2_cont_01,write a limerick about a lazy programmer,content,other,content,content,content,content,ml,0.33,False
+v2,v2_cont_02,give me 10 name ideas for a podcast about space,content,content,content,content,content,content,rule,0.65,True
+v2,v2_cont_03,summarise the plot of romeo and juliet in three sentences,content,other,content,reasoning,content,reasoning,ml,0.52,True
+v2,v2_cont_04,draft a short speech for my sister's wedding,content,other,content,content,content,content,ml,0.2,False
+v2,v2_cont_05,write an instagram caption for a sunset beach photo,content,other,content,content,content,content,ml,0.92,True
+v2,v2_data_01,pull all the phone numbers out of this paragraph,data,other,data,data,data,data,ml,0.51,True
+v2,v2_data_02,"is this review positive or negative: 'worst pizza ever, never again'",data,other,data,data,data,data,ml,0.3,False
+v2,v2_data_03,classify these emails as urgent or not urgent,data,other,data,data,data,data,ml,0.3,False
+v2,v2_data_04,turn this json into a csv table,data,data,programming,data,data,data,rule,0.17,False
+v2,v2_data_05,"find the outliers in 3, 5, 4, 6, 98, 5, 4",data,data,data,reasoning,data,data,rule,0.25,False
+v2,v2_task_01,make me a weekly meal prep plan for a vegetarian,task_planning,other,task_planning,task_planning,task_planning,task_planning,ml,0.37,False
+v2,v2_task_02,how do i set up a python virtual environment,task_planning,programming,language,language,programming,programming,rule,0.48,False
+v2,v2_task_03,give me a packing checklist for a 3 day trek,task_planning,task_planning,task_planning,task_planning,task_planning,task_planning,rule,0.44,False
+v2,v2_task_04,plan my study timetable for the 2 weeks before finals,task_planning,other,task_planning,task_planning,task_planning,task_planning,ml,0.21,False
+v2,v2_task_05,what are the steps to deploy a flask app on heroku,task_planning,task_planning,other,task_planning,task_planning,task_planning,rule,0.2,False
+v2,v2_conv_01,"ugh mondays, am i right",conversation,other,task_planning,language,task_planning,language,ml,0.16,False
+v2,v2_conv_02,do you like music?,conversation,other,language,conversation,language,conversation,ml,0.31,False
+v2,v2_conv_03,i had a terrible day at work,conversation,other,reasoning,reasoning,reasoning,reasoning,ml,0.23,False
+v2,v2_conv_04,good morning! how's it going,conversation,conversation,conversation,conversation,conversation,conversation,rule,0.59,True
+v2,v2_conv_05,can we just chat for a bit,conversation,other,conversation,conversation,conversation,conversation,ml,0.16,False
+v2,v2_other_01,what is the capital of canada,other,knowledge,other,other,knowledge,knowledge,rule,0.66,True
+v2,v2_other_02,convert 5 miles to kilometres,other,other,other,other,other,other,ml,0.61,True
+v2,v2_other_03,how many days are in a leap year,other,reasoning,other,other,reasoning,reasoning,rule,0.42,False
+v2,v2_other_04,who painted the mona lisa,other,other,other,other,other,other,ml,1.0,True
+v2,v2_other_05,what's the boiling point of water in fahrenheit,other,other,other,other,other,other,ml,0.6,True

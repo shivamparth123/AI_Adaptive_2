@@ -1,0 +1,433 @@
+effective_ram_gb,mode,id,prompt,true_category,predicted_category,model_with_true_category,model_with_predicted_category,routing_changed,latency_penalty_sec,quality_delta
+3.2,fast,t_know_01,how do solid state drives store data without moving parts,knowledge,other,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,fast,t_know_02,Why is the sky blue during the day but red at sunset?,knowledge,knowledge,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,fast,t_know_03,Can you explain what a firewall does?,knowledge,knowledge,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,fast,t_know_04,what's the difference between a virus and a bacterium,knowledge,knowledge,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,fast,t_reas_01,"A car covers 150 km in 2.5 hours. What's its average speed, and how long would 400 km take?",reasoning,reasoning,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,fast,t_reas_02,"If a rectangle's perimeter is 36 and its length is twice its width, find its dimensions.",reasoning,reasoning,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,fast,t_reas_03,"Is it logically valid to say: no birds are mammals, bats are mammals, therefore bats are not birds?",reasoning,reasoning,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,fast,t_reas_04,"Which grows faster, n log n or n squared, and why?",reasoning,reasoning,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,fast,t_prog_01,"my python loop keeps printing the same value forever, here's the code: while x > 0: print(x)",programming,programming,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,fast,t_prog_02,Write a JavaScript function that removes duplicates from an array,programming,programming,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,fast,t_prog_03,how do I reverse a string in C,programming,programming,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,fast,t_prog_04,Write a bash one-liner to count lines in all .txt files,programming,programming,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,fast,t_lang_01,How would I say 'where is the library' in German?,language,language,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,fast,t_lang_02,"Make this sound more professional: 'we messed up the order, sorry'",language,language,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,fast,t_lang_03,"Translate 'good morning, how did you sleep?' into Spanish",language,language,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,fast,t_lang_04,Write a short email declining a meeting invitation politely,language,other,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,fast,t_cont_01,Give me a one-paragraph summary of the causes of World War 1,content,content,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,fast,t_cont_02,Write a short poem about a rainy Monday morning,content,other,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,fast,t_cont_03,Come up with 5 names for a coffee shop that also sells books,content,content,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,fast,t_cont_04,Write a funny two-line caption for a photo of a cat on a laptop,content,other,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,fast,t_data_01,From this sentence pull out the date and the person's name: 'Priya booked the hall on 14 August.',data,data,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,fast,t_data_02,"Is this message spam? 'You've been selected for a free cruise, reply YES now'",data,other,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,fast,t_data_03,Label the sentiment of this review: 'Battery life is awful but the screen is gorgeous.',data,data,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,fast,t_data_04,What does a high standard deviation tell you about a dataset?,data,data,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,fast,t_task_01,Help me plan a 5-day revision schedule for my DBMS exam,task_planning,task_planning,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,fast,t_task_02,What are the steps to publish a Python package to PyPI?,task_planning,programming,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,fast,t_task_03,Create a checklist for moving into a new apartment,task_planning,task_planning,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,fast,t_task_04,Walk me through setting up SSH keys for GitHub,task_planning,task_planning,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,fast,t_conv_01,hey! what's up?,conversation,conversation,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,fast,t_conv_02,"I'm bored, any suggestions for something to do tonight?",conversation,conversation,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,fast,t_conv_03,Do you ever get tired of answering questions?,conversation,conversation,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,fast,t_conv_04,"I just finished my exams, feeling great!",conversation,conversation,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,fast,t_other_01,What is the speed of light in km/s?,other,knowledge,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,fast,t_other_02,Convert 72 inches to centimeters,other,other,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,fast,t_other_03,Who wrote the play Hamlet?,other,other,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,fast,t_other_04,What is the largest ocean on Earth?,other,knowledge,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,balanced,t_know_01,how do solid state drives store data without moving parts,knowledge,other,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,balanced,t_know_02,Why is the sky blue during the day but red at sunset?,knowledge,knowledge,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,balanced,t_know_03,Can you explain what a firewall does?,knowledge,knowledge,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,balanced,t_know_04,what's the difference between a virus and a bacterium,knowledge,knowledge,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,balanced,t_reas_01,"A car covers 150 km in 2.5 hours. What's its average speed, and how long would 400 km take?",reasoning,reasoning,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,balanced,t_reas_02,"If a rectangle's perimeter is 36 and its length is twice its width, find its dimensions.",reasoning,reasoning,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,balanced,t_reas_03,"Is it logically valid to say: no birds are mammals, bats are mammals, therefore bats are not birds?",reasoning,reasoning,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,balanced,t_reas_04,"Which grows faster, n log n or n squared, and why?",reasoning,reasoning,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,balanced,t_prog_01,"my python loop keeps printing the same value forever, here's the code: while x > 0: print(x)",programming,programming,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,balanced,t_prog_02,Write a JavaScript function that removes duplicates from an array,programming,programming,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,balanced,t_prog_03,how do I reverse a string in C,programming,programming,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,balanced,t_prog_04,Write a bash one-liner to count lines in all .txt files,programming,programming,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,balanced,t_lang_01,How would I say 'where is the library' in German?,language,language,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,balanced,t_lang_02,"Make this sound more professional: 'we messed up the order, sorry'",language,language,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,balanced,t_lang_03,"Translate 'good morning, how did you sleep?' into Spanish",language,language,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,balanced,t_lang_04,Write a short email declining a meeting invitation politely,language,other,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,balanced,t_cont_01,Give me a one-paragraph summary of the causes of World War 1,content,content,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,balanced,t_cont_02,Write a short poem about a rainy Monday morning,content,other,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,balanced,t_cont_03,Come up with 5 names for a coffee shop that also sells books,content,content,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,balanced,t_cont_04,Write a funny two-line caption for a photo of a cat on a laptop,content,other,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,balanced,t_data_01,From this sentence pull out the date and the person's name: 'Priya booked the hall on 14 August.',data,data,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,balanced,t_data_02,"Is this message spam? 'You've been selected for a free cruise, reply YES now'",data,other,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,balanced,t_data_03,Label the sentiment of this review: 'Battery life is awful but the screen is gorgeous.',data,data,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,balanced,t_data_04,What does a high standard deviation tell you about a dataset?,data,data,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,balanced,t_task_01,Help me plan a 5-day revision schedule for my DBMS exam,task_planning,task_planning,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,balanced,t_task_02,What are the steps to publish a Python package to PyPI?,task_planning,programming,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,balanced,t_task_03,Create a checklist for moving into a new apartment,task_planning,task_planning,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,balanced,t_task_04,Walk me through setting up SSH keys for GitHub,task_planning,task_planning,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,balanced,t_conv_01,hey! what's up?,conversation,conversation,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,balanced,t_conv_02,"I'm bored, any suggestions for something to do tonight?",conversation,conversation,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,balanced,t_conv_03,Do you ever get tired of answering questions?,conversation,conversation,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,balanced,t_conv_04,"I just finished my exams, feeling great!",conversation,conversation,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,balanced,t_other_01,What is the speed of light in km/s?,other,knowledge,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,balanced,t_other_02,Convert 72 inches to centimeters,other,other,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,balanced,t_other_03,Who wrote the play Hamlet?,other,other,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,balanced,t_other_04,What is the largest ocean on Earth?,other,knowledge,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,quality,t_know_01,how do solid state drives store data without moving parts,knowledge,other,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,quality,t_know_02,Why is the sky blue during the day but red at sunset?,knowledge,knowledge,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,quality,t_know_03,Can you explain what a firewall does?,knowledge,knowledge,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,quality,t_know_04,what's the difference between a virus and a bacterium,knowledge,knowledge,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,quality,t_reas_01,"A car covers 150 km in 2.5 hours. What's its average speed, and how long would 400 km take?",reasoning,reasoning,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,quality,t_reas_02,"If a rectangle's perimeter is 36 and its length is twice its width, find its dimensions.",reasoning,reasoning,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,quality,t_reas_03,"Is it logically valid to say: no birds are mammals, bats are mammals, therefore bats are not birds?",reasoning,reasoning,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,quality,t_reas_04,"Which grows faster, n log n or n squared, and why?",reasoning,reasoning,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,quality,t_prog_01,"my python loop keeps printing the same value forever, here's the code: while x > 0: print(x)",programming,programming,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,quality,t_prog_02,Write a JavaScript function that removes duplicates from an array,programming,programming,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,quality,t_prog_03,how do I reverse a string in C,programming,programming,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,quality,t_prog_04,Write a bash one-liner to count lines in all .txt files,programming,programming,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,quality,t_lang_01,How would I say 'where is the library' in German?,language,language,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,quality,t_lang_02,"Make this sound more professional: 'we messed up the order, sorry'",language,language,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,quality,t_lang_03,"Translate 'good morning, how did you sleep?' into Spanish",language,language,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,quality,t_lang_04,Write a short email declining a meeting invitation politely,language,other,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,quality,t_cont_01,Give me a one-paragraph summary of the causes of World War 1,content,content,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,quality,t_cont_02,Write a short poem about a rainy Monday morning,content,other,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,quality,t_cont_03,Come up with 5 names for a coffee shop that also sells books,content,content,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,quality,t_cont_04,Write a funny two-line caption for a photo of a cat on a laptop,content,other,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,quality,t_data_01,From this sentence pull out the date and the person's name: 'Priya booked the hall on 14 August.',data,data,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,quality,t_data_02,"Is this message spam? 'You've been selected for a free cruise, reply YES now'",data,other,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,quality,t_data_03,Label the sentiment of this review: 'Battery life is awful but the screen is gorgeous.',data,data,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,quality,t_data_04,What does a high standard deviation tell you about a dataset?,data,data,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,quality,t_task_01,Help me plan a 5-day revision schedule for my DBMS exam,task_planning,task_planning,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,quality,t_task_02,What are the steps to publish a Python package to PyPI?,task_planning,programming,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,quality,t_task_03,Create a checklist for moving into a new apartment,task_planning,task_planning,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,quality,t_task_04,Walk me through setting up SSH keys for GitHub,task_planning,task_planning,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,quality,t_conv_01,hey! what's up?,conversation,conversation,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,quality,t_conv_02,"I'm bored, any suggestions for something to do tonight?",conversation,conversation,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,quality,t_conv_03,Do you ever get tired of answering questions?,conversation,conversation,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,quality,t_conv_04,"I just finished my exams, feeling great!",conversation,conversation,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,quality,t_other_01,What is the speed of light in km/s?,other,knowledge,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,quality,t_other_02,Convert 72 inches to centimeters,other,other,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,quality,t_other_03,Who wrote the play Hamlet?,other,other,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.2,quality,t_other_04,What is the largest ocean on Earth?,other,knowledge,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.5,fast,t_know_01,how do solid state drives store data without moving parts,knowledge,other,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.5,fast,t_know_02,Why is the sky blue during the day but red at sunset?,knowledge,knowledge,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.5,fast,t_know_03,Can you explain what a firewall does?,knowledge,knowledge,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.5,fast,t_know_04,what's the difference between a virus and a bacterium,knowledge,knowledge,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.5,fast,t_reas_01,"A car covers 150 km in 2.5 hours. What's its average speed, and how long would 400 km take?",reasoning,reasoning,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.5,fast,t_reas_02,"If a rectangle's perimeter is 36 and its length is twice its width, find its dimensions.",reasoning,reasoning,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.5,fast,t_reas_03,"Is it logically valid to say: no birds are mammals, bats are mammals, therefore bats are not birds?",reasoning,reasoning,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.5,fast,t_reas_04,"Which grows faster, n log n or n squared, and why?",reasoning,reasoning,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.5,fast,t_prog_01,"my python loop keeps printing the same value forever, here's the code: while x > 0: print(x)",programming,programming,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.5,fast,t_prog_02,Write a JavaScript function that removes duplicates from an array,programming,programming,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.5,fast,t_prog_03,how do I reverse a string in C,programming,programming,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.5,fast,t_prog_04,Write a bash one-liner to count lines in all .txt files,programming,programming,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.5,fast,t_lang_01,How would I say 'where is the library' in German?,language,language,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.5,fast,t_lang_02,"Make this sound more professional: 'we messed up the order, sorry'",language,language,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.5,fast,t_lang_03,"Translate 'good morning, how did you sleep?' into Spanish",language,language,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.5,fast,t_lang_04,Write a short email declining a meeting invitation politely,language,other,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.5,fast,t_cont_01,Give me a one-paragraph summary of the causes of World War 1,content,content,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.5,fast,t_cont_02,Write a short poem about a rainy Monday morning,content,other,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.5,fast,t_cont_03,Come up with 5 names for a coffee shop that also sells books,content,content,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.5,fast,t_cont_04,Write a funny two-line caption for a photo of a cat on a laptop,content,other,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.5,fast,t_data_01,From this sentence pull out the date and the person's name: 'Priya booked the hall on 14 August.',data,data,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.5,fast,t_data_02,"Is this message spam? 'You've been selected for a free cruise, reply YES now'",data,other,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.5,fast,t_data_03,Label the sentiment of this review: 'Battery life is awful but the screen is gorgeous.',data,data,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.5,fast,t_data_04,What does a high standard deviation tell you about a dataset?,data,data,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.5,fast,t_task_01,Help me plan a 5-day revision schedule for my DBMS exam,task_planning,task_planning,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.5,fast,t_task_02,What are the steps to publish a Python package to PyPI?,task_planning,programming,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.5,fast,t_task_03,Create a checklist for moving into a new apartment,task_planning,task_planning,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.5,fast,t_task_04,Walk me through setting up SSH keys for GitHub,task_planning,task_planning,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.5,fast,t_conv_01,hey! what's up?,conversation,conversation,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.5,fast,t_conv_02,"I'm bored, any suggestions for something to do tonight?",conversation,conversation,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.5,fast,t_conv_03,Do you ever get tired of answering questions?,conversation,conversation,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.5,fast,t_conv_04,"I just finished my exams, feeling great!",conversation,conversation,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.5,fast,t_other_01,What is the speed of light in km/s?,other,knowledge,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.5,fast,t_other_02,Convert 72 inches to centimeters,other,other,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.5,fast,t_other_03,Who wrote the play Hamlet?,other,other,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.5,fast,t_other_04,What is the largest ocean on Earth?,other,knowledge,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.5,balanced,t_know_01,how do solid state drives store data without moving parts,knowledge,other,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.5,balanced,t_know_02,Why is the sky blue during the day but red at sunset?,knowledge,knowledge,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.5,balanced,t_know_03,Can you explain what a firewall does?,knowledge,knowledge,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.5,balanced,t_know_04,what's the difference between a virus and a bacterium,knowledge,knowledge,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.5,balanced,t_reas_01,"A car covers 150 km in 2.5 hours. What's its average speed, and how long would 400 km take?",reasoning,reasoning,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.5,balanced,t_reas_02,"If a rectangle's perimeter is 36 and its length is twice its width, find its dimensions.",reasoning,reasoning,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.5,balanced,t_reas_03,"Is it logically valid to say: no birds are mammals, bats are mammals, therefore bats are not birds?",reasoning,reasoning,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.5,balanced,t_reas_04,"Which grows faster, n log n or n squared, and why?",reasoning,reasoning,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.5,balanced,t_prog_01,"my python loop keeps printing the same value forever, here's the code: while x > 0: print(x)",programming,programming,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.5,balanced,t_prog_02,Write a JavaScript function that removes duplicates from an array,programming,programming,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.5,balanced,t_prog_03,how do I reverse a string in C,programming,programming,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.5,balanced,t_prog_04,Write a bash one-liner to count lines in all .txt files,programming,programming,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.5,balanced,t_lang_01,How would I say 'where is the library' in German?,language,language,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.5,balanced,t_lang_02,"Make this sound more professional: 'we messed up the order, sorry'",language,language,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.5,balanced,t_lang_03,"Translate 'good morning, how did you sleep?' into Spanish",language,language,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.5,balanced,t_lang_04,Write a short email declining a meeting invitation politely,language,other,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.5,balanced,t_cont_01,Give me a one-paragraph summary of the causes of World War 1,content,content,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.5,balanced,t_cont_02,Write a short poem about a rainy Monday morning,content,other,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.5,balanced,t_cont_03,Come up with 5 names for a coffee shop that also sells books,content,content,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.5,balanced,t_cont_04,Write a funny two-line caption for a photo of a cat on a laptop,content,other,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.5,balanced,t_data_01,From this sentence pull out the date and the person's name: 'Priya booked the hall on 14 August.',data,data,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.5,balanced,t_data_02,"Is this message spam? 'You've been selected for a free cruise, reply YES now'",data,other,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.5,balanced,t_data_03,Label the sentiment of this review: 'Battery life is awful but the screen is gorgeous.',data,data,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.5,balanced,t_data_04,What does a high standard deviation tell you about a dataset?,data,data,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.5,balanced,t_task_01,Help me plan a 5-day revision schedule for my DBMS exam,task_planning,task_planning,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.5,balanced,t_task_02,What are the steps to publish a Python package to PyPI?,task_planning,programming,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.5,balanced,t_task_03,Create a checklist for moving into a new apartment,task_planning,task_planning,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.5,balanced,t_task_04,Walk me through setting up SSH keys for GitHub,task_planning,task_planning,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.5,balanced,t_conv_01,hey! what's up?,conversation,conversation,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.5,balanced,t_conv_02,"I'm bored, any suggestions for something to do tonight?",conversation,conversation,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.5,balanced,t_conv_03,Do you ever get tired of answering questions?,conversation,conversation,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.5,balanced,t_conv_04,"I just finished my exams, feeling great!",conversation,conversation,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.5,balanced,t_other_01,What is the speed of light in km/s?,other,knowledge,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.5,balanced,t_other_02,Convert 72 inches to centimeters,other,other,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.5,balanced,t_other_03,Who wrote the play Hamlet?,other,other,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.5,balanced,t_other_04,What is the largest ocean on Earth?,other,knowledge,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.5,quality,t_know_01,how do solid state drives store data without moving parts,knowledge,other,gemma3:4b,llama3.2:3b,True,-28.02,-0.08
+3.5,quality,t_know_02,Why is the sky blue during the day but red at sunset?,knowledge,knowledge,gemma3:4b,gemma3:4b,False,0.0,0.0
+3.5,quality,t_know_03,Can you explain what a firewall does?,knowledge,knowledge,gemma3:4b,gemma3:4b,False,0.0,0.0
+3.5,quality,t_know_04,what's the difference between a virus and a bacterium,knowledge,knowledge,gemma3:4b,gemma3:4b,False,0.0,0.0
+3.5,quality,t_reas_01,"A car covers 150 km in 2.5 hours. What's its average speed, and how long would 400 km take?",reasoning,reasoning,gemma3:4b,gemma3:4b,False,0.0,0.0
+3.5,quality,t_reas_02,"If a rectangle's perimeter is 36 and its length is twice its width, find its dimensions.",reasoning,reasoning,gemma3:4b,gemma3:4b,False,0.0,0.0
+3.5,quality,t_reas_03,"Is it logically valid to say: no birds are mammals, bats are mammals, therefore bats are not birds?",reasoning,reasoning,gemma3:4b,gemma3:4b,False,0.0,0.0
+3.5,quality,t_reas_04,"Which grows faster, n log n or n squared, and why?",reasoning,reasoning,gemma3:4b,gemma3:4b,False,0.0,0.0
+3.5,quality,t_prog_01,"my python loop keeps printing the same value forever, here's the code: while x > 0: print(x)",programming,programming,gemma3:4b,gemma3:4b,False,0.0,0.0
+3.5,quality,t_prog_02,Write a JavaScript function that removes duplicates from an array,programming,programming,gemma3:4b,gemma3:4b,False,0.0,0.0
+3.5,quality,t_prog_03,how do I reverse a string in C,programming,programming,gemma3:4b,gemma3:4b,False,0.0,0.0
+3.5,quality,t_prog_04,Write a bash one-liner to count lines in all .txt files,programming,programming,gemma3:4b,gemma3:4b,False,0.0,0.0
+3.5,quality,t_lang_01,How would I say 'where is the library' in German?,language,language,gemma3:4b,gemma3:4b,False,0.0,0.0
+3.5,quality,t_lang_02,"Make this sound more professional: 'we messed up the order, sorry'",language,language,gemma3:4b,gemma3:4b,False,0.0,0.0
+3.5,quality,t_lang_03,"Translate 'good morning, how did you sleep?' into Spanish",language,language,gemma3:4b,gemma3:4b,False,0.0,0.0
+3.5,quality,t_lang_04,Write a short email declining a meeting invitation politely,language,other,gemma3:4b,llama3.2:3b,True,-16.65,-0.08
+3.5,quality,t_cont_01,Give me a one-paragraph summary of the causes of World War 1,content,content,gemma3:4b,gemma3:4b,False,0.0,0.0
+3.5,quality,t_cont_02,Write a short poem about a rainy Monday morning,content,other,gemma3:4b,llama3.2:3b,True,-11.49,-0.05
+3.5,quality,t_cont_03,Come up with 5 names for a coffee shop that also sells books,content,content,gemma3:4b,gemma3:4b,False,0.0,0.0
+3.5,quality,t_cont_04,Write a funny two-line caption for a photo of a cat on a laptop,content,other,gemma3:4b,llama3.2:3b,True,-11.49,-0.05
+3.5,quality,t_data_01,From this sentence pull out the date and the person's name: 'Priya booked the hall on 14 August.',data,data,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.5,quality,t_data_02,"Is this message spam? 'You've been selected for a free cruise, reply YES now'",data,other,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.5,quality,t_data_03,Label the sentiment of this review: 'Battery life is awful but the screen is gorgeous.',data,data,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.5,quality,t_data_04,What does a high standard deviation tell you about a dataset?,data,data,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.5,quality,t_task_01,Help me plan a 5-day revision schedule for my DBMS exam,task_planning,task_planning,gemma3:4b,gemma3:4b,False,0.0,0.0
+3.5,quality,t_task_02,What are the steps to publish a Python package to PyPI?,task_planning,programming,gemma3:4b,gemma3:4b,False,0.0,0.0
+3.5,quality,t_task_03,Create a checklist for moving into a new apartment,task_planning,task_planning,gemma3:4b,gemma3:4b,False,0.0,0.0
+3.5,quality,t_task_04,Walk me through setting up SSH keys for GitHub,task_planning,task_planning,gemma3:4b,gemma3:4b,False,0.0,0.0
+3.5,quality,t_conv_01,hey! what's up?,conversation,conversation,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.5,quality,t_conv_02,"I'm bored, any suggestions for something to do tonight?",conversation,conversation,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.5,quality,t_conv_03,Do you ever get tired of answering questions?,conversation,conversation,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.5,quality,t_conv_04,"I just finished my exams, feeling great!",conversation,conversation,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.5,quality,t_other_01,What is the speed of light in km/s?,other,knowledge,llama3.2:3b,gemma3:4b,True,2.47,-0.09
+3.5,quality,t_other_02,Convert 72 inches to centimeters,other,other,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.5,quality,t_other_03,Who wrote the play Hamlet?,other,other,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+3.5,quality,t_other_04,What is the largest ocean on Earth?,other,knowledge,llama3.2:3b,gemma3:4b,True,2.47,-0.09
+4.5,fast,t_know_01,how do solid state drives store data without moving parts,knowledge,other,phi4-mini:latest,llama3.2:3b,True,12.28,-0.07
+4.5,fast,t_know_02,Why is the sky blue during the day but red at sunset?,knowledge,knowledge,phi4-mini:latest,phi4-mini:latest,False,0.0,0.0
+4.5,fast,t_know_03,Can you explain what a firewall does?,knowledge,knowledge,phi4-mini:latest,phi4-mini:latest,False,0.0,0.0
+4.5,fast,t_know_04,what's the difference between a virus and a bacterium,knowledge,knowledge,phi4-mini:latest,phi4-mini:latest,False,0.0,0.0
+4.5,fast,t_reas_01,"A car covers 150 km in 2.5 hours. What's its average speed, and how long would 400 km take?",reasoning,reasoning,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+4.5,fast,t_reas_02,"If a rectangle's perimeter is 36 and its length is twice its width, find its dimensions.",reasoning,reasoning,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+4.5,fast,t_reas_03,"Is it logically valid to say: no birds are mammals, bats are mammals, therefore bats are not birds?",reasoning,reasoning,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+4.5,fast,t_reas_04,"Which grows faster, n log n or n squared, and why?",reasoning,reasoning,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+4.5,fast,t_prog_01,"my python loop keeps printing the same value forever, here's the code: while x > 0: print(x)",programming,programming,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+4.5,fast,t_prog_02,Write a JavaScript function that removes duplicates from an array,programming,programming,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+4.5,fast,t_prog_03,how do I reverse a string in C,programming,programming,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+4.5,fast,t_prog_04,Write a bash one-liner to count lines in all .txt files,programming,programming,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+4.5,fast,t_lang_01,How would I say 'where is the library' in German?,language,language,phi4-mini:latest,phi4-mini:latest,False,0.0,0.0
+4.5,fast,t_lang_02,"Make this sound more professional: 'we messed up the order, sorry'",language,language,phi4-mini:latest,phi4-mini:latest,False,0.0,0.0
+4.5,fast,t_lang_03,"Translate 'good morning, how did you sleep?' into Spanish",language,language,phi4-mini:latest,phi4-mini:latest,False,0.0,0.0
+4.5,fast,t_lang_04,Write a short email declining a meeting invitation politely,language,other,phi4-mini:latest,llama3.2:3b,True,2.55,-0.06
+4.5,fast,t_cont_01,Give me a one-paragraph summary of the causes of World War 1,content,content,phi4-mini:latest,phi4-mini:latest,False,0.0,0.0
+4.5,fast,t_cont_02,Write a short poem about a rainy Monday morning,content,other,phi4-mini:latest,llama3.2:3b,True,4.28,0.2
+4.5,fast,t_cont_03,Come up with 5 names for a coffee shop that also sells books,content,content,phi4-mini:latest,phi4-mini:latest,False,0.0,0.0
+4.5,fast,t_cont_04,Write a funny two-line caption for a photo of a cat on a laptop,content,other,phi4-mini:latest,llama3.2:3b,True,4.28,0.2
+4.5,fast,t_data_01,From this sentence pull out the date and the person's name: 'Priya booked the hall on 14 August.',data,data,phi4-mini:latest,phi4-mini:latest,False,0.0,0.0
+4.5,fast,t_data_02,"Is this message spam? 'You've been selected for a free cruise, reply YES now'",data,other,phi4-mini:latest,llama3.2:3b,True,4.0,-0.07
+4.5,fast,t_data_03,Label the sentiment of this review: 'Battery life is awful but the screen is gorgeous.',data,data,phi4-mini:latest,phi4-mini:latest,False,0.0,0.0
+4.5,fast,t_data_04,What does a high standard deviation tell you about a dataset?,data,data,phi4-mini:latest,phi4-mini:latest,False,0.0,0.0
+4.5,fast,t_task_01,Help me plan a 5-day revision schedule for my DBMS exam,task_planning,task_planning,phi4-mini:latest,phi4-mini:latest,False,0.0,0.0
+4.5,fast,t_task_02,What are the steps to publish a Python package to PyPI?,task_planning,programming,phi4-mini:latest,llama3.2:3b,True,10.09,-0.08
+4.5,fast,t_task_03,Create a checklist for moving into a new apartment,task_planning,task_planning,phi4-mini:latest,phi4-mini:latest,False,0.0,0.0
+4.5,fast,t_task_04,Walk me through setting up SSH keys for GitHub,task_planning,task_planning,phi4-mini:latest,phi4-mini:latest,False,0.0,0.0
+4.5,fast,t_conv_01,hey! what's up?,conversation,conversation,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+4.5,fast,t_conv_02,"I'm bored, any suggestions for something to do tonight?",conversation,conversation,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+4.5,fast,t_conv_03,Do you ever get tired of answering questions?,conversation,conversation,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+4.5,fast,t_conv_04,"I just finished my exams, feeling great!",conversation,conversation,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+4.5,fast,t_other_01,What is the speed of light in km/s?,other,knowledge,llama3.2:3b,phi4-mini:latest,True,1.77,-0.14
+4.5,fast,t_other_02,Convert 72 inches to centimeters,other,other,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+4.5,fast,t_other_03,Who wrote the play Hamlet?,other,other,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+4.5,fast,t_other_04,What is the largest ocean on Earth?,other,knowledge,llama3.2:3b,phi4-mini:latest,True,1.77,-0.14
+4.5,balanced,t_know_01,how do solid state drives store data without moving parts,knowledge,other,phi4-mini:latest,llama3.2:3b,True,12.28,-0.07
+4.5,balanced,t_know_02,Why is the sky blue during the day but red at sunset?,knowledge,knowledge,phi4-mini:latest,phi4-mini:latest,False,0.0,0.0
+4.5,balanced,t_know_03,Can you explain what a firewall does?,knowledge,knowledge,phi4-mini:latest,phi4-mini:latest,False,0.0,0.0
+4.5,balanced,t_know_04,what's the difference between a virus and a bacterium,knowledge,knowledge,phi4-mini:latest,phi4-mini:latest,False,0.0,0.0
+4.5,balanced,t_reas_01,"A car covers 150 km in 2.5 hours. What's its average speed, and how long would 400 km take?",reasoning,reasoning,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+4.5,balanced,t_reas_02,"If a rectangle's perimeter is 36 and its length is twice its width, find its dimensions.",reasoning,reasoning,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+4.5,balanced,t_reas_03,"Is it logically valid to say: no birds are mammals, bats are mammals, therefore bats are not birds?",reasoning,reasoning,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+4.5,balanced,t_reas_04,"Which grows faster, n log n or n squared, and why?",reasoning,reasoning,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+4.5,balanced,t_prog_01,"my python loop keeps printing the same value forever, here's the code: while x > 0: print(x)",programming,programming,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+4.5,balanced,t_prog_02,Write a JavaScript function that removes duplicates from an array,programming,programming,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+4.5,balanced,t_prog_03,how do I reverse a string in C,programming,programming,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+4.5,balanced,t_prog_04,Write a bash one-liner to count lines in all .txt files,programming,programming,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+4.5,balanced,t_lang_01,How would I say 'where is the library' in German?,language,language,phi4-mini:latest,phi4-mini:latest,False,0.0,0.0
+4.5,balanced,t_lang_02,"Make this sound more professional: 'we messed up the order, sorry'",language,language,phi4-mini:latest,phi4-mini:latest,False,0.0,0.0
+4.5,balanced,t_lang_03,"Translate 'good morning, how did you sleep?' into Spanish",language,language,phi4-mini:latest,phi4-mini:latest,False,0.0,0.0
+4.5,balanced,t_lang_04,Write a short email declining a meeting invitation politely,language,other,phi4-mini:latest,llama3.2:3b,True,2.55,-0.06
+4.5,balanced,t_cont_01,Give me a one-paragraph summary of the causes of World War 1,content,content,phi4-mini:latest,phi4-mini:latest,False,0.0,0.0
+4.5,balanced,t_cont_02,Write a short poem about a rainy Monday morning,content,other,phi4-mini:latest,llama3.2:3b,True,4.28,0.2
+4.5,balanced,t_cont_03,Come up with 5 names for a coffee shop that also sells books,content,content,phi4-mini:latest,phi4-mini:latest,False,0.0,0.0
+4.5,balanced,t_cont_04,Write a funny two-line caption for a photo of a cat on a laptop,content,other,phi4-mini:latest,llama3.2:3b,True,4.28,0.2
+4.5,balanced,t_data_01,From this sentence pull out the date and the person's name: 'Priya booked the hall on 14 August.',data,data,phi4-mini:latest,phi4-mini:latest,False,0.0,0.0
+4.5,balanced,t_data_02,"Is this message spam? 'You've been selected for a free cruise, reply YES now'",data,other,phi4-mini:latest,llama3.2:3b,True,4.0,-0.07
+4.5,balanced,t_data_03,Label the sentiment of this review: 'Battery life is awful but the screen is gorgeous.',data,data,phi4-mini:latest,phi4-mini:latest,False,0.0,0.0
+4.5,balanced,t_data_04,What does a high standard deviation tell you about a dataset?,data,data,phi4-mini:latest,phi4-mini:latest,False,0.0,0.0
+4.5,balanced,t_task_01,Help me plan a 5-day revision schedule for my DBMS exam,task_planning,task_planning,phi4-mini:latest,phi4-mini:latest,False,0.0,0.0
+4.5,balanced,t_task_02,What are the steps to publish a Python package to PyPI?,task_planning,programming,phi4-mini:latest,llama3.2:3b,True,10.09,-0.08
+4.5,balanced,t_task_03,Create a checklist for moving into a new apartment,task_planning,task_planning,phi4-mini:latest,phi4-mini:latest,False,0.0,0.0
+4.5,balanced,t_task_04,Walk me through setting up SSH keys for GitHub,task_planning,task_planning,phi4-mini:latest,phi4-mini:latest,False,0.0,0.0
+4.5,balanced,t_conv_01,hey! what's up?,conversation,conversation,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+4.5,balanced,t_conv_02,"I'm bored, any suggestions for something to do tonight?",conversation,conversation,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+4.5,balanced,t_conv_03,Do you ever get tired of answering questions?,conversation,conversation,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+4.5,balanced,t_conv_04,"I just finished my exams, feeling great!",conversation,conversation,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+4.5,balanced,t_other_01,What is the speed of light in km/s?,other,knowledge,llama3.2:3b,phi4-mini:latest,True,1.77,-0.14
+4.5,balanced,t_other_02,Convert 72 inches to centimeters,other,other,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+4.5,balanced,t_other_03,Who wrote the play Hamlet?,other,other,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+4.5,balanced,t_other_04,What is the largest ocean on Earth?,other,knowledge,llama3.2:3b,phi4-mini:latest,True,1.77,-0.14
+4.5,quality,t_know_01,how do solid state drives store data without moving parts,knowledge,other,gemma3:4b,llama3.2:3b,True,-28.02,-0.08
+4.5,quality,t_know_02,Why is the sky blue during the day but red at sunset?,knowledge,knowledge,gemma3:4b,gemma3:4b,False,0.0,0.0
+4.5,quality,t_know_03,Can you explain what a firewall does?,knowledge,knowledge,gemma3:4b,gemma3:4b,False,0.0,0.0
+4.5,quality,t_know_04,what's the difference between a virus and a bacterium,knowledge,knowledge,gemma3:4b,gemma3:4b,False,0.0,0.0
+4.5,quality,t_reas_01,"A car covers 150 km in 2.5 hours. What's its average speed, and how long would 400 km take?",reasoning,reasoning,gemma3:4b,gemma3:4b,False,0.0,0.0
+4.5,quality,t_reas_02,"If a rectangle's perimeter is 36 and its length is twice its width, find its dimensions.",reasoning,reasoning,gemma3:4b,gemma3:4b,False,0.0,0.0
+4.5,quality,t_reas_03,"Is it logically valid to say: no birds are mammals, bats are mammals, therefore bats are not birds?",reasoning,reasoning,gemma3:4b,gemma3:4b,False,0.0,0.0
+4.5,quality,t_reas_04,"Which grows faster, n log n or n squared, and why?",reasoning,reasoning,gemma3:4b,gemma3:4b,False,0.0,0.0
+4.5,quality,t_prog_01,"my python loop keeps printing the same value forever, here's the code: while x > 0: print(x)",programming,programming,gemma3:4b,gemma3:4b,False,0.0,0.0
+4.5,quality,t_prog_02,Write a JavaScript function that removes duplicates from an array,programming,programming,gemma3:4b,gemma3:4b,False,0.0,0.0
+4.5,quality,t_prog_03,how do I reverse a string in C,programming,programming,gemma3:4b,gemma3:4b,False,0.0,0.0
+4.5,quality,t_prog_04,Write a bash one-liner to count lines in all .txt files,programming,programming,gemma3:4b,gemma3:4b,False,0.0,0.0
+4.5,quality,t_lang_01,How would I say 'where is the library' in German?,language,language,gemma3:4b,gemma3:4b,False,0.0,0.0
+4.5,quality,t_lang_02,"Make this sound more professional: 'we messed up the order, sorry'",language,language,gemma3:4b,gemma3:4b,False,0.0,0.0
+4.5,quality,t_lang_03,"Translate 'good morning, how did you sleep?' into Spanish",language,language,gemma3:4b,gemma3:4b,False,0.0,0.0
+4.5,quality,t_lang_04,Write a short email declining a meeting invitation politely,language,other,gemma3:4b,llama3.2:3b,True,-16.65,-0.08
+4.5,quality,t_cont_01,Give me a one-paragraph summary of the causes of World War 1,content,content,gemma3:4b,gemma3:4b,False,0.0,0.0
+4.5,quality,t_cont_02,Write a short poem about a rainy Monday morning,content,other,gemma3:4b,llama3.2:3b,True,-11.49,-0.05
+4.5,quality,t_cont_03,Come up with 5 names for a coffee shop that also sells books,content,content,gemma3:4b,gemma3:4b,False,0.0,0.0
+4.5,quality,t_cont_04,Write a funny two-line caption for a photo of a cat on a laptop,content,other,gemma3:4b,llama3.2:3b,True,-11.49,-0.05
+4.5,quality,t_data_01,From this sentence pull out the date and the person's name: 'Priya booked the hall on 14 August.',data,data,phi4-mini:latest,phi4-mini:latest,False,0.0,0.0
+4.5,quality,t_data_02,"Is this message spam? 'You've been selected for a free cruise, reply YES now'",data,other,phi4-mini:latest,llama3.2:3b,True,4.0,-0.07
+4.5,quality,t_data_03,Label the sentiment of this review: 'Battery life is awful but the screen is gorgeous.',data,data,phi4-mini:latest,phi4-mini:latest,False,0.0,0.0
+4.5,quality,t_data_04,What does a high standard deviation tell you about a dataset?,data,data,phi4-mini:latest,phi4-mini:latest,False,0.0,0.0
+4.5,quality,t_task_01,Help me plan a 5-day revision schedule for my DBMS exam,task_planning,task_planning,gemma3:4b,gemma3:4b,False,0.0,0.0
+4.5,quality,t_task_02,What are the steps to publish a Python package to PyPI?,task_planning,programming,gemma3:4b,gemma3:4b,False,0.0,0.0
+4.5,quality,t_task_03,Create a checklist for moving into a new apartment,task_planning,task_planning,gemma3:4b,gemma3:4b,False,0.0,0.0
+4.5,quality,t_task_04,Walk me through setting up SSH keys for GitHub,task_planning,task_planning,gemma3:4b,gemma3:4b,False,0.0,0.0
+4.5,quality,t_conv_01,hey! what's up?,conversation,conversation,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+4.5,quality,t_conv_02,"I'm bored, any suggestions for something to do tonight?",conversation,conversation,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+4.5,quality,t_conv_03,Do you ever get tired of answering questions?,conversation,conversation,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+4.5,quality,t_conv_04,"I just finished my exams, feeling great!",conversation,conversation,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+4.5,quality,t_other_01,What is the speed of light in km/s?,other,knowledge,llama3.2:3b,gemma3:4b,True,2.47,-0.09
+4.5,quality,t_other_02,Convert 72 inches to centimeters,other,other,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+4.5,quality,t_other_03,Who wrote the play Hamlet?,other,other,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+4.5,quality,t_other_04,What is the largest ocean on Earth?,other,knowledge,llama3.2:3b,gemma3:4b,True,2.47,-0.09
+7.0,fast,t_know_01,how do solid state drives store data without moving parts,knowledge,other,phi4-mini:latest,llama3.2:3b,True,12.28,-0.07
+7.0,fast,t_know_02,Why is the sky blue during the day but red at sunset?,knowledge,knowledge,phi4-mini:latest,phi4-mini:latest,False,0.0,0.0
+7.0,fast,t_know_03,Can you explain what a firewall does?,knowledge,knowledge,phi4-mini:latest,phi4-mini:latest,False,0.0,0.0
+7.0,fast,t_know_04,what's the difference between a virus and a bacterium,knowledge,knowledge,phi4-mini:latest,phi4-mini:latest,False,0.0,0.0
+7.0,fast,t_reas_01,"A car covers 150 km in 2.5 hours. What's its average speed, and how long would 400 km take?",reasoning,reasoning,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+7.0,fast,t_reas_02,"If a rectangle's perimeter is 36 and its length is twice its width, find its dimensions.",reasoning,reasoning,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+7.0,fast,t_reas_03,"Is it logically valid to say: no birds are mammals, bats are mammals, therefore bats are not birds?",reasoning,reasoning,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+7.0,fast,t_reas_04,"Which grows faster, n log n or n squared, and why?",reasoning,reasoning,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+7.0,fast,t_prog_01,"my python loop keeps printing the same value forever, here's the code: while x > 0: print(x)",programming,programming,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+7.0,fast,t_prog_02,Write a JavaScript function that removes duplicates from an array,programming,programming,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+7.0,fast,t_prog_03,how do I reverse a string in C,programming,programming,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+7.0,fast,t_prog_04,Write a bash one-liner to count lines in all .txt files,programming,programming,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+7.0,fast,t_lang_01,How would I say 'where is the library' in German?,language,language,phi4-mini:latest,phi4-mini:latest,False,0.0,0.0
+7.0,fast,t_lang_02,"Make this sound more professional: 'we messed up the order, sorry'",language,language,phi4-mini:latest,phi4-mini:latest,False,0.0,0.0
+7.0,fast,t_lang_03,"Translate 'good morning, how did you sleep?' into Spanish",language,language,phi4-mini:latest,phi4-mini:latest,False,0.0,0.0
+7.0,fast,t_lang_04,Write a short email declining a meeting invitation politely,language,other,phi4-mini:latest,llama3.2:3b,True,2.55,-0.06
+7.0,fast,t_cont_01,Give me a one-paragraph summary of the causes of World War 1,content,content,phi4-mini:latest,phi4-mini:latest,False,0.0,0.0
+7.0,fast,t_cont_02,Write a short poem about a rainy Monday morning,content,other,phi4-mini:latest,llama3.2:3b,True,4.28,0.2
+7.0,fast,t_cont_03,Come up with 5 names for a coffee shop that also sells books,content,content,phi4-mini:latest,phi4-mini:latest,False,0.0,0.0
+7.0,fast,t_cont_04,Write a funny two-line caption for a photo of a cat on a laptop,content,other,phi4-mini:latest,llama3.2:3b,True,4.28,0.2
+7.0,fast,t_data_01,From this sentence pull out the date and the person's name: 'Priya booked the hall on 14 August.',data,data,phi4-mini:latest,phi4-mini:latest,False,0.0,0.0
+7.0,fast,t_data_02,"Is this message spam? 'You've been selected for a free cruise, reply YES now'",data,other,phi4-mini:latest,llama3.2:3b,True,4.0,-0.07
+7.0,fast,t_data_03,Label the sentiment of this review: 'Battery life is awful but the screen is gorgeous.',data,data,phi4-mini:latest,phi4-mini:latest,False,0.0,0.0
+7.0,fast,t_data_04,What does a high standard deviation tell you about a dataset?,data,data,phi4-mini:latest,phi4-mini:latest,False,0.0,0.0
+7.0,fast,t_task_01,Help me plan a 5-day revision schedule for my DBMS exam,task_planning,task_planning,phi4-mini:latest,phi4-mini:latest,False,0.0,0.0
+7.0,fast,t_task_02,What are the steps to publish a Python package to PyPI?,task_planning,programming,phi4-mini:latest,llama3.2:3b,True,10.09,-0.08
+7.0,fast,t_task_03,Create a checklist for moving into a new apartment,task_planning,task_planning,phi4-mini:latest,phi4-mini:latest,False,0.0,0.0
+7.0,fast,t_task_04,Walk me through setting up SSH keys for GitHub,task_planning,task_planning,phi4-mini:latest,phi4-mini:latest,False,0.0,0.0
+7.0,fast,t_conv_01,hey! what's up?,conversation,conversation,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+7.0,fast,t_conv_02,"I'm bored, any suggestions for something to do tonight?",conversation,conversation,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+7.0,fast,t_conv_03,Do you ever get tired of answering questions?,conversation,conversation,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+7.0,fast,t_conv_04,"I just finished my exams, feeling great!",conversation,conversation,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+7.0,fast,t_other_01,What is the speed of light in km/s?,other,knowledge,llama3.2:3b,phi4-mini:latest,True,1.77,-0.14
+7.0,fast,t_other_02,Convert 72 inches to centimeters,other,other,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+7.0,fast,t_other_03,Who wrote the play Hamlet?,other,other,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+7.0,fast,t_other_04,What is the largest ocean on Earth?,other,knowledge,llama3.2:3b,phi4-mini:latest,True,1.77,-0.14
+7.0,balanced,t_know_01,how do solid state drives store data without moving parts,knowledge,other,phi4-mini:latest,llama3.2:3b,True,12.28,-0.07
+7.0,balanced,t_know_02,Why is the sky blue during the day but red at sunset?,knowledge,knowledge,phi4-mini:latest,phi4-mini:latest,False,0.0,0.0
+7.0,balanced,t_know_03,Can you explain what a firewall does?,knowledge,knowledge,phi4-mini:latest,phi4-mini:latest,False,0.0,0.0
+7.0,balanced,t_know_04,what's the difference between a virus and a bacterium,knowledge,knowledge,phi4-mini:latest,phi4-mini:latest,False,0.0,0.0
+7.0,balanced,t_reas_01,"A car covers 150 km in 2.5 hours. What's its average speed, and how long would 400 km take?",reasoning,reasoning,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+7.0,balanced,t_reas_02,"If a rectangle's perimeter is 36 and its length is twice its width, find its dimensions.",reasoning,reasoning,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+7.0,balanced,t_reas_03,"Is it logically valid to say: no birds are mammals, bats are mammals, therefore bats are not birds?",reasoning,reasoning,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+7.0,balanced,t_reas_04,"Which grows faster, n log n or n squared, and why?",reasoning,reasoning,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+7.0,balanced,t_prog_01,"my python loop keeps printing the same value forever, here's the code: while x > 0: print(x)",programming,programming,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+7.0,balanced,t_prog_02,Write a JavaScript function that removes duplicates from an array,programming,programming,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+7.0,balanced,t_prog_03,how do I reverse a string in C,programming,programming,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+7.0,balanced,t_prog_04,Write a bash one-liner to count lines in all .txt files,programming,programming,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+7.0,balanced,t_lang_01,How would I say 'where is the library' in German?,language,language,phi4-mini:latest,phi4-mini:latest,False,0.0,0.0
+7.0,balanced,t_lang_02,"Make this sound more professional: 'we messed up the order, sorry'",language,language,phi4-mini:latest,phi4-mini:latest,False,0.0,0.0
+7.0,balanced,t_lang_03,"Translate 'good morning, how did you sleep?' into Spanish",language,language,phi4-mini:latest,phi4-mini:latest,False,0.0,0.0
+7.0,balanced,t_lang_04,Write a short email declining a meeting invitation politely,language,other,phi4-mini:latest,llama3.2:3b,True,2.55,-0.06
+7.0,balanced,t_cont_01,Give me a one-paragraph summary of the causes of World War 1,content,content,phi4-mini:latest,phi4-mini:latest,False,0.0,0.0
+7.0,balanced,t_cont_02,Write a short poem about a rainy Monday morning,content,other,phi4-mini:latest,llama3.2:3b,True,4.28,0.2
+7.0,balanced,t_cont_03,Come up with 5 names for a coffee shop that also sells books,content,content,phi4-mini:latest,phi4-mini:latest,False,0.0,0.0
+7.0,balanced,t_cont_04,Write a funny two-line caption for a photo of a cat on a laptop,content,other,phi4-mini:latest,llama3.2:3b,True,4.28,0.2
+7.0,balanced,t_data_01,From this sentence pull out the date and the person's name: 'Priya booked the hall on 14 August.',data,data,phi4-mini:latest,phi4-mini:latest,False,0.0,0.0
+7.0,balanced,t_data_02,"Is this message spam? 'You've been selected for a free cruise, reply YES now'",data,other,phi4-mini:latest,llama3.2:3b,True,4.0,-0.07
+7.0,balanced,t_data_03,Label the sentiment of this review: 'Battery life is awful but the screen is gorgeous.',data,data,phi4-mini:latest,phi4-mini:latest,False,0.0,0.0
+7.0,balanced,t_data_04,What does a high standard deviation tell you about a dataset?,data,data,phi4-mini:latest,phi4-mini:latest,False,0.0,0.0
+7.0,balanced,t_task_01,Help me plan a 5-day revision schedule for my DBMS exam,task_planning,task_planning,phi4-mini:latest,phi4-mini:latest,False,0.0,0.0
+7.0,balanced,t_task_02,What are the steps to publish a Python package to PyPI?,task_planning,programming,phi4-mini:latest,llama3.2:3b,True,10.09,-0.08
+7.0,balanced,t_task_03,Create a checklist for moving into a new apartment,task_planning,task_planning,phi4-mini:latest,phi4-mini:latest,False,0.0,0.0
+7.0,balanced,t_task_04,Walk me through setting up SSH keys for GitHub,task_planning,task_planning,phi4-mini:latest,phi4-mini:latest,False,0.0,0.0
+7.0,balanced,t_conv_01,hey! what's up?,conversation,conversation,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+7.0,balanced,t_conv_02,"I'm bored, any suggestions for something to do tonight?",conversation,conversation,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+7.0,balanced,t_conv_03,Do you ever get tired of answering questions?,conversation,conversation,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+7.0,balanced,t_conv_04,"I just finished my exams, feeling great!",conversation,conversation,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+7.0,balanced,t_other_01,What is the speed of light in km/s?,other,knowledge,llama3.2:3b,phi4-mini:latest,True,1.77,-0.14
+7.0,balanced,t_other_02,Convert 72 inches to centimeters,other,other,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+7.0,balanced,t_other_03,Who wrote the play Hamlet?,other,other,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+7.0,balanced,t_other_04,What is the largest ocean on Earth?,other,knowledge,llama3.2:3b,phi4-mini:latest,True,1.77,-0.14
+7.0,quality,t_know_01,how do solid state drives store data without moving parts,knowledge,other,gemma3:4b,llama3.2:3b,True,-28.02,-0.08
+7.0,quality,t_know_02,Why is the sky blue during the day but red at sunset?,knowledge,knowledge,gemma3:4b,gemma3:4b,False,0.0,0.0
+7.0,quality,t_know_03,Can you explain what a firewall does?,knowledge,knowledge,gemma3:4b,gemma3:4b,False,0.0,0.0
+7.0,quality,t_know_04,what's the difference between a virus and a bacterium,knowledge,knowledge,gemma3:4b,gemma3:4b,False,0.0,0.0
+7.0,quality,t_reas_01,"A car covers 150 km in 2.5 hours. What's its average speed, and how long would 400 km take?",reasoning,reasoning,gemma3:4b,gemma3:4b,False,0.0,0.0
+7.0,quality,t_reas_02,"If a rectangle's perimeter is 36 and its length is twice its width, find its dimensions.",reasoning,reasoning,gemma3:4b,gemma3:4b,False,0.0,0.0
+7.0,quality,t_reas_03,"Is it logically valid to say: no birds are mammals, bats are mammals, therefore bats are not birds?",reasoning,reasoning,gemma3:4b,gemma3:4b,False,0.0,0.0
+7.0,quality,t_reas_04,"Which grows faster, n log n or n squared, and why?",reasoning,reasoning,gemma3:4b,gemma3:4b,False,0.0,0.0
+7.0,quality,t_prog_01,"my python loop keeps printing the same value forever, here's the code: while x > 0: print(x)",programming,programming,gemma3:4b,gemma3:4b,False,0.0,0.0
+7.0,quality,t_prog_02,Write a JavaScript function that removes duplicates from an array,programming,programming,gemma3:4b,gemma3:4b,False,0.0,0.0
+7.0,quality,t_prog_03,how do I reverse a string in C,programming,programming,gemma3:4b,gemma3:4b,False,0.0,0.0
+7.0,quality,t_prog_04,Write a bash one-liner to count lines in all .txt files,programming,programming,gemma3:4b,gemma3:4b,False,0.0,0.0
+7.0,quality,t_lang_01,How would I say 'where is the library' in German?,language,language,gemma3:4b,gemma3:4b,False,0.0,0.0
+7.0,quality,t_lang_02,"Make this sound more professional: 'we messed up the order, sorry'",language,language,gemma3:4b,gemma3:4b,False,0.0,0.0
+7.0,quality,t_lang_03,"Translate 'good morning, how did you sleep?' into Spanish",language,language,gemma3:4b,gemma3:4b,False,0.0,0.0
+7.0,quality,t_lang_04,Write a short email declining a meeting invitation politely,language,other,gemma3:4b,llama3.2:3b,True,-16.65,-0.08
+7.0,quality,t_cont_01,Give me a one-paragraph summary of the causes of World War 1,content,content,gemma3:4b,gemma3:4b,False,0.0,0.0
+7.0,quality,t_cont_02,Write a short poem about a rainy Monday morning,content,other,gemma3:4b,llama3.2:3b,True,-11.49,-0.05
+7.0,quality,t_cont_03,Come up with 5 names for a coffee shop that also sells books,content,content,gemma3:4b,gemma3:4b,False,0.0,0.0
+7.0,quality,t_cont_04,Write a funny two-line caption for a photo of a cat on a laptop,content,other,gemma3:4b,llama3.2:3b,True,-11.49,-0.05
+7.0,quality,t_data_01,From this sentence pull out the date and the person's name: 'Priya booked the hall on 14 August.',data,data,phi4-mini:latest,phi4-mini:latest,False,0.0,0.0
+7.0,quality,t_data_02,"Is this message spam? 'You've been selected for a free cruise, reply YES now'",data,other,phi4-mini:latest,llama3.2:3b,True,4.0,-0.07
+7.0,quality,t_data_03,Label the sentiment of this review: 'Battery life is awful but the screen is gorgeous.',data,data,phi4-mini:latest,phi4-mini:latest,False,0.0,0.0
+7.0,quality,t_data_04,What does a high standard deviation tell you about a dataset?,data,data,phi4-mini:latest,phi4-mini:latest,False,0.0,0.0
+7.0,quality,t_task_01,Help me plan a 5-day revision schedule for my DBMS exam,task_planning,task_planning,gemma3:4b,gemma3:4b,False,0.0,0.0
+7.0,quality,t_task_02,What are the steps to publish a Python package to PyPI?,task_planning,programming,gemma3:4b,gemma3:4b,False,0.0,0.0
+7.0,quality,t_task_03,Create a checklist for moving into a new apartment,task_planning,task_planning,gemma3:4b,gemma3:4b,False,0.0,0.0
+7.0,quality,t_task_04,Walk me through setting up SSH keys for GitHub,task_planning,task_planning,gemma3:4b,gemma3:4b,False,0.0,0.0
+7.0,quality,t_conv_01,hey! what's up?,conversation,conversation,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+7.0,quality,t_conv_02,"I'm bored, any suggestions for something to do tonight?",conversation,conversation,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+7.0,quality,t_conv_03,Do you ever get tired of answering questions?,conversation,conversation,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+7.0,quality,t_conv_04,"I just finished my exams, feeling great!",conversation,conversation,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+7.0,quality,t_other_01,What is the speed of light in km/s?,other,knowledge,llama3.2:3b,gemma3:4b,True,2.47,-0.09
+7.0,quality,t_other_02,Convert 72 inches to centimeters,other,other,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+7.0,quality,t_other_03,Who wrote the play Hamlet?,other,other,llama3.2:3b,llama3.2:3b,False,0.0,0.0
+7.0,quality,t_other_04,What is the largest ocean on Earth?,other,knowledge,llama3.2:3b,gemma3:4b,True,2.47,-0.09
