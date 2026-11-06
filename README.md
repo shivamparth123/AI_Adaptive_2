@@ -4,7 +4,7 @@
 
 ![Python](https://img.shields.io/badge/python-3.11-blue) ![Platform](https://img.shields.io/badge/platform-Windows%2011-lightgrey) ![Ollama](https://img.shields.io/badge/runs%20on-Ollama-black) ![License](https://img.shields.io/badge/license-MIT-green)
 
-BTech final-year project (SK2 "Local AI"). Everything runs **on your own computer** (CPU only) - no cloud, no API keys, no data leaves the machine.
+BTech final-year project ("Local AI"). Everything runs **on your own computer** (CPU only) - no cloud, no API keys, no data leaves the machine.
 
 ---
 
