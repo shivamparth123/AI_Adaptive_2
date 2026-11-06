@@ -6,7 +6,7 @@
 
 > This document describes everything that was built, how it works, how to run it, what data and results it produced,
 > where every file the system generates is stored (and how to clean it up), and what its limits are.
-> Exact package versions are in `requirements-lock.txt`. To publish the project see `docs/REPO_GUIDE.md`; to install it on a new PC see `README.md`.
+> To install the project on a new PC, see `README.md`.
 
 ---
 
@@ -91,7 +91,7 @@ and writing to the same log.
 | Ollama | **0.33.2** (`ollama --version`) |
 | Models in Ollama | see the table in section 3.1 (`ollama list`) |
 | Python | **3.11** (the compiled cache files are `cpython-311`; confirm the exact patch version with `python --version`) |
-| Python packages | `requirements.txt` (what the project needs) and `requirements-lock.txt` (exact versions from this machine) |
+| Python packages | `requirements.txt` |
 | Key packages | `fastapi`, `uvicorn[standard]`, `python-multipart`, `pandas`, `scikit-learn`, `psutil`, `ollama` (Python client) |
 | Browser front end | plain HTML/CSS/JavaScript; `marked` 12.0.0 (Markdown) and `KaTeX` 0.16.9 (math) loaded from the jsDelivr CDN |
 
@@ -308,7 +308,6 @@ Before this change the router used `keep_alive="0s"`, so every query was cold an
 D:\AdaptiveLocalAI2\
 |-- README.md  LICENSE  .gitignore       GitHub front page, license, upload rules
 |-- requirements.txt                     Python packages (minimum versions)
-|-- requirements-lock.txt                exact versions from the author's machine
 |-- setup.ps1  run_web.bat  run_cli.bat  one-time setup; start the web app / command line
 |-- session_logger.py                    shared CSV logger (must be in this top-level folder)
 |-- app\         maincode.py             command-line application
@@ -321,7 +320,7 @@ D:\AdaptiveLocalAI2\
 |-- webapp\backend\                      FastAPI server (+ uploads\ folder, private)
 |-- webapp\frontend\                     index.html, style.css, app.js
 |-- tools\                               check_setup, check_requirements, cleanup, organize_project, ram_check, qwen_vl_debug
-|-- docs\                                PROJECT_DOCUMENTATION.md, REPO_GUIDE.md, images\
+|-- docs\                                PROJECT_DOCUMENTATION.md
 |-- archive\                             local only: old patch scripts, router backups, old logs, private notes
 `-- venv\                                Python virtual environment (not project code, not uploaded)
 ```
@@ -330,7 +329,7 @@ D:\AdaptiveLocalAI2\
 | File | Purpose |
 |---|---|
 | `README.md`, `LICENSE`, `.gitignore` | GitHub front page (install and run guide), MIT license, rules that keep private data off GitHub |
-| `requirements.txt` / `requirements-lock.txt` | Packages needed / exact versions of the author's environment |
+| `requirements.txt` | Packages needed |
 | `setup.ps1` | One-time Windows setup: virtual environment, packages, optional model download (`-PullModels`), Ollama setting (`-SetOllamaEnv`), final check |
 | `run_web.bat`, `run_cli.bat` | Start the web app / the command-line app |
 | `session_logger.py` | `ensure_log_file()` and `log_interaction()`; defines the 26-column log schema; used by both CLI and web. **Must sit directly in the top-level project folder, not inside a folder of the same name.** |
@@ -341,7 +340,6 @@ D:\AdaptiveLocalAI2\
 | `tools/ram_check.py` | Read-only RAM diagnostic: app figure vs OS, router budget, who uses memory, footprint units, relevant settings (`--watch 12` samples over time) |
 | `tools/qwen_vl_debug.py` | One capped vision call that reports `done_reason`, tokens, hidden-thinking length, window use (`--model --question --tokens --think --ctx --list`) |
 | `docs/PROJECT_DOCUMENTATION.md` | This document |
-| `docs/REPO_GUIDE.md` | What to keep/upload/move/delete, and step-by-step GitHub publishing |
 | `archive/patches/patch_router*.py` | One-time router patches, all applied: `patch_router` (follow-up context), `_hybrid` (hybrid classifier), `_vision` (vision follow-ups), `_manual` (manual model), `_keepalive` (3-minute keep-alive, WARM/COLD), `_ramfix` (GiB units, loaded models eligible), `_visiondiag` (vision diagnostics) |
 | `archive/router_backups/` | `router_BEFORE_*.py` safety copies and `task_classifier_OLD.py` |
 
@@ -937,7 +935,7 @@ Do **not** delete files inside the browser's own profile folder by hand; use the
 About 170 automated checks were run while building: the web frontend in a simulated browser with a fake backend (persistence across refreshes, switching/deleting/undoing chats, a late answer arriving after you left a conversation, Stop, Compare toggle, routing panel rows, manual model, status chips, quota/failure handling); the backend with a stand-in router (upload validation, path-traversal rejection, async streaming closing the Ollama stream on disconnect, status fields); and the router logic with a stand-in Ollama (units, loaded-model eligibility, manual override, low-RAM fallback, token options, vision fallback), including each patch script (applies, is idempotent, refuses if the file differs). **These test scripts live outside the project folder and are not part of it**; they are available if you want them packaged.
 
 ### 15.3 Not verified / caveats
-- The simulated tests cannot see real rendering or real Ollama timing - the visual design was judged from your screenshots.
+- The simulated tests cannot see real rendering or real Ollama timing - the visual design was judged from screenshots of the running app.
 - The extra 0.5 GB RAM figure for Qwen3-VL's larger window (`QWEN_VL_EXTRA_KV_GB`) is an estimate; measure with `ollama ps` while it is loaded.
 - Python and package versions are not recorded here (section 2.2).
 
@@ -1112,9 +1110,9 @@ python analyze_routing_impact.py
 ```
 
 ## Appendix B - Before you submit
-- [x] Environment recorded (Python 3.11; `requirements.txt` and `requirements-lock.txt`).
+- [x] Environment recorded (Python 3.11; `requirements.txt`).
 - [ ] Run `python tools\organize_project.py --apply` (moves patch scripts and backups into `archive\`).
-- [ ] Publish on GitHub: follow `docs\REPO_GUIDE.md`.
+- [x] Published on GitHub: https://github.com/shivamparth123/AI_Adaptive_2
 - [ ] Back up `logs\interactive_session_log.csv` and keep all of `results\`.
 - [ ] Optional clean-up (section 14.2): uploaded images, `__pycache__`, browser chats.
 - [ ] Tell the supervisor the image-generation scope decision.

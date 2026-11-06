@@ -4,13 +4,13 @@
 
 ![Python](https://img.shields.io/badge/python-3.11-blue) ![Platform](https://img.shields.io/badge/platform-Windows%2011-lightgrey) ![Ollama](https://img.shields.io/badge/runs%20on-Ollama-black) ![License](https://img.shields.io/badge/license-MIT-green)
 
-BTech final-year project ("Local AI"). Everything runs **on your own computer** (CPU only) - no cloud, no API keys, no data leaves the machine.
+BTech final-year project, School of Entrepreneurship and Management (SME), IIT Jodhpur. Everything runs **on your own computer** (CPU only) - no cloud, no API keys, no data leaves the machine.
 
 ---
 
 ## Contents
 1. [What it does](#1-what-it-does)
-2. [Screenshots](#2-screenshots)
+2. [Use case: private AI for organizations](#2-use-case-private-ai-for-organizations)
 3. [How it works](#3-how-it-works)
 4. [What you need](#4-what-you-need)
 5. [Quick start on a new Windows PC](#5-quick-start-on-a-new-windows-pc)
@@ -49,12 +49,22 @@ Running LLMs locally is attractive, but a laptop has limited, shared memory, and
 - Live status chips: RAM, CPU, battery.
 - Hybrid task classifier (keyword rules + small SVM) and a complete experimental record (benchmark, calibration, evaluations).
 
-## 2. Screenshots
-| | |
-|---|---|
-| ![Chat with routing panel](docs/images/chat-routing-panel.png) <br> *Chat with the routing panel* | ![Manual model](docs/images/manual-model.png) <br> *Manual model choice and RAM note* |
-| ![Low RAM](docs/images/low-ram-excluded.png) <br> *Models that do not fit are greyed out with the reason* | ![Image tab](docs/images/image-tab.png) <br> *Image questions with follow-ups* |
-| ![Compare](docs/images/compare.png) <br> *Compare both vision models* | ![History](docs/images/history.png) <br> *Usage history (web + CLI)* |
+
+## 2. Use case: private AI for organizations
+Employees need AI tools, but cloud AI sends prompts, code and documents to third-party servers. Many organizations therefore restrict AI use, and running one large model locally is too heavy for an ordinary laptop. Adaptive Local AI runs entirely on the user's own computer. It identifies the task type, checks the free RAM, and automatically selects the best local model, so even a normal laptop stays responsive.
+
+**Example:** when a new intern joins a firm, IT installs the application on the intern's system. The intern gets AI assistance from the first day, and all prompts, files and answers stay on that computer. Nothing is shared with other users or sent to the cloud, and removing the project folder removes the data.
+
+**Benefits**
+- **Data privacy:** works offline after setup; no data leaves the device.
+- **No running cost:** no subscription, no API fees, free and open source (MIT).
+- **Works on ordinary hardware:** the router avoids models that do not fit in free memory.
+- **No cross-user leakage:** every installation is separate.
+
+**Who it suits:** engineering and manufacturing firms, consultancies, legal and finance teams, startups and small businesses, colleges and labs.
+
+**Current limits:** the models are small (3 to 8 billion parameters), results come from one 16 GB Windows laptop, and the tool is single-user (see [Limitations](#16-limitations)).
+
 
 ## 3. How it works
 ```
@@ -126,8 +136,8 @@ ollama --version
 
 **Step 3 - Get the code.** Either with Git:
 ```powershell
-git clone https://github.com/<your-username>/adaptive-local-ai.git
-cd adaptive-local-ai
+git clone https://github.com/shivamparth123/AI_Adaptive_2.git
+cd AI_Adaptive_2
 ```
 or click **Code -> Download ZIP** on the GitHub page, unzip it, and open PowerShell in that folder.
 
@@ -236,10 +246,9 @@ Everything tunable is a constant at the top of `router/router.py`:
 
 ## 11. Project structure
 ```
-adaptive-local-ai/
+AI_Adaptive_2/
 |-- README.md  LICENSE  .gitignore
 |-- requirements.txt            Python packages (minimum versions)
-|-- requirements-lock.txt       exact versions from the author's machine (optional)
 |-- setup.ps1                   one-time setup (venv, packages, models, checks)
 |-- run_web.bat  run_cli.bat    start the web app / command line
 |-- session_logger.py           shared activity log (must stay in this folder)
@@ -253,7 +262,7 @@ adaptive-local-ai/
 |-- results/                    all measured data (CSV/JSON)
 |-- logs/                       activity log (private, not uploaded)
 |-- tools/                      check_setup.py, check_requirements.py, cleanup.py, ram_check.py, qwen_vl_debug.py, organize_project.py
-`-- docs/                       PROJECT_DOCUMENTATION.md, REPO_GUIDE.md, images/
+`-- docs/                       PROJECT_DOCUMENTATION.md
 ```
 
 ## 12. Results at a glance
@@ -331,7 +340,8 @@ The Python code uses `psutil`, `ollama` and standard paths, so it should work, b
 
 ## 18. Documentation, license, credits
 - **Full documentation** (architecture, data, results, every file, API, log format, troubleshooting): [docs/PROJECT_DOCUMENTATION.md](docs/PROJECT_DOCUMENTATION.md)
-- **Repository guide** (what to upload, GitHub steps): [docs/REPO_GUIDE.md](docs/REPO_GUIDE.md)
 - **License:** MIT - see [LICENSE](LICENSE). The language models are **not** included and each has its own license (see its page on ollama.com).
 - **Built with:** [Ollama](https://ollama.com), FastAPI, scikit-learn, psutil, pandas, marked, KaTeX.
-- **Authors:** Shivam Kumar - <https://github.com/shivamparth123>, and Yash Singholiya. Supervisor: Dr. Venkat Ram Reddy Ganuthula. Institution: IIT Jodhpur.
+- **Authors:** Shivam Kumar - <https://github.com/shivamparth123>, and Yash Singholiya.
+- **Supervisor:** Dr. Venkat Ram Reddy Ganuthula
+- **Institution:** School of Entrepreneurship and Management (SME), IIT Jodhpur
